@@ -1178,6 +1178,478 @@ const toolsData = [
       en: "Executes terminal commands and edits files within a secure container, ensuring no dangerous scripts touch your main host.",
       zh: "在安全的容器沙盒中运行终端命令和编辑文件，有效隔绝危险的 AI 脚本污染和损坏本地主机系统。"
     }
+  },
+  {
+    id: "antigravity",
+    name: "Google Antigravity",
+    category: "ide",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://antigravity.google",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "Google's Agent-first cloud IDE announced at I/O 2026. Powered by Gemini models with an Agent Manager for orchestrating multi-agent workflows, Antigravity CLI, and SDK.",
+      zh: "Google 在 I/O 2026 发布的 Agent 优先云端 IDE。搭载 Gemini 模型，内置 Agent Manager 多智能体编排中心、Antigravity CLI 和 SDK。"
+    },
+    freeTier: {
+      models: {
+        en: "Gemini 2.5 Flash",
+        zh: "Gemini 2.5 Flash"
+      },
+      limits: {
+        en: "Free tier with Google account login. Limited daily requests and basic agent capabilities.",
+        zh: "使用 Google 账号登录即可免费使用。每日请求次数有限制，提供基础 Agent 功能。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$19.99/mo (Google One AI Premium)",
+        zh: "$19.99/月 (Google One AI Premium)"
+      },
+      models: {
+        en: "Gemini 2.5 Pro, Gemini 2.5 Flash (high-speed), Gemini 2.5 Flash Lite",
+        zh: "Gemini 2.5 Pro, Gemini 2.5 Flash (高速), Gemini 2.5 Flash Lite"
+      },
+      limits: {
+        en: "Bundled with Google One AI Premium subscription. Unlimited agent executions and full Agent Manager capabilities.",
+        zh: "与 Google One AI Premium 订阅绑定。无限 Agent 执行次数，完整 Agent Manager 功能。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up with a Google account.",
+        zh: "使用 Google 账号登录注册。"
+      },
+      requirements: {
+        en: "Google account required. AI Premium subscription for full access.",
+        zh: "需要 Google 账号。完整功能需 AI Premium 订阅。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free tier available. Google One AI Premium often includes a 1-month free trial.",
+        zh: "有免费版可用。Google One AI Premium 通常提供 1 个月免费试用。"
+      }
+    },
+    extraInfo: {
+      en: "Integrates tightly with Google Cloud, Firebase, and Google's Gemini model ecosystem. Features an Agent Manager for multi-agent orchestration.",
+      zh: "与 Google Cloud、Firebase 和 Google Gemini 模型生态紧密集成。特色功能是 Agent Manager 多智能体编排系统。"
+    }
+  },
+  {
+    id: "augment-code",
+    name: "Augment Code",
+    category: "extension",
+    isOpenSource: false,
+    hasFreeTier: false,
+    status: "active",
+    website: "https://augmentcode.com",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "Enterprise-grade AI coding assistant with a proprietary 'Cosmos' engine and 'Context Engine' for full-repo codebase understanding. Supports VS Code, JetBrains, and CLI.",
+      zh: "企业级 AI 编程助手，拥有自研 'Cosmos' 引擎和 'Context Engine' 全仓库代码上下文感知。支持 VS Code、JetBrains 和 CLI。"
+    },
+    freeTier: {
+      models: {
+        en: "N/A",
+        zh: "无免费版"
+      },
+      limits: {
+        en: "No free tier available. Paid plans start at $20/mo.",
+        zh: "无免费版。付费计划 $20/月起。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$20/mo (Indie) | $60/mo (Standard) | $200/mo (Max)",
+        zh: "$20/月 (Indie) | $60/月 (Standard) | $200/月 (Max)"
+      },
+      models: {
+        en: "Cosmos (proprietary engine, undisclosed underlying models)",
+        zh: "Cosmos（自研引擎，底层模型未公开）"
+      },
+      limits: {
+        en: "Credit-based: Indie 40K credits, Standard 130K credits, Max 450K credits per month. Credits used for agent tasks and code review.",
+        zh: "积分制：Indie 4万积分, Standard 13万积分, Max 45万积分/月。积分用于 Agent 任务和代码审查。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Install via VS Code / JetBrains marketplace or CLI.",
+        zh: "通过 VS Code / JetBrains 插件市场或 CLI 安装。"
+      },
+      requirements: {
+        en: "Credit card required for all plans.",
+        zh: "所有计划均需信用卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "No public free trial information available.",
+        zh: "暂无公开的免费试用信息。"
+      }
+    },
+    extraInfo: {
+      en: "SOC 2 Type II certified. Features Context Engine for deep codebase analysis across massive monorepos. Supports MCP and native tool integrations.",
+      zh: "通过 SOC 2 Type II 认证。特色功能是 Context Engine，支持对大型 Monorepo 进行深度代码分析。支持 MCP 和原生工具集成。"
+    }
+  },
+  {
+    id: "devin",
+    name: "Devin",
+    category: "cli",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://devin.ai",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "The world's first fully autonomous AI software engineer by Cognition. Runs as a cloud-based SWE agent that can plan, code, test, and ship entire features autonomously in parallel.",
+      zh: "由 Cognition 开发的全球首个全自主 AI 软件工程师。作为云端 SWE Agent 运行，可以自主地进行计划、编码、测试和部署，且支持并行处理多个任务。"
+    },
+    freeTier: {
+      models: {
+        en: "Devin (proprietary model, limited usage)",
+        zh: "Devin（自研模型，限量使用）"
+      },
+      limits: {
+        en: "Limited Devin usage, Devin Review, DeepWiki access.",
+        zh: "有限的 Devin 使用量、Devin Review 代码审查、DeepWiki 文档访问。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$20/mo (Pro) | $200/mo (Max) | $80/mo (Teams) | Custom (Enterprise)",
+        zh: "$20/月 (Pro) | $200/月 (Max) | $80/月 (Teams) | 自定义 (Enterprise)"
+      },
+      models: {
+        en: "Devin (proprietary model, undisclosed architecture)",
+        zh: "Devin（自研模型，架构未公开）"
+      },
+      limits: {
+        en: "Pro: Devin usage quota + Windsurf IDE usage quota + pay-as-you-go overflow. Teams: Unlimited team members + shared collaboration.",
+        zh: "Pro：Devin 使用配额 + Windsurf IDE 使用配额 + 超出按量付费。Teams：无限团队成员 + 协作共享。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up at app.devin.ai with email.",
+        zh: "在 app.devin.ai 通过邮箱注册。"
+      },
+      requirements: {
+        en: "No credit card required for Free. Paid plans require payment method.",
+        zh: "免费版无需信用卡。付费版需要支付方式。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free tier available for all users.",
+        zh: "所有用户均可使用免费版。"
+      }
+    },
+    extraInfo: {
+      en: "Includes Windsurf IDE access with Pro+ plans. Supports Slack, Linear, MCP integrations. Enterprise plan includes SAML/OIDC SSO and dedicated support.",
+      zh: "Pro+ 计划包含 Windsurf IDE 使用权。支持 Slack、Linear、MCP 集成。企业版包含 SAML/OIDC SSO 和专属客服支持。"
+    }
+  },
+  {
+    id: "zed",
+    name: "Zed",
+    category: "ide",
+    isOpenSource: true,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://zed.dev",
+    github: "https://github.com/zed-industries/zed",
+    installCmd: "",
+    desc: {
+      en: "An open-source, high-performance AI code editor built in Rust. Designed for agentic workflows with real-time multiplayer collaboration and native speed.",
+      zh: "使用 Rust 构建的开源高性能 AI 代码编辑器。专为 Agent 工作流设计，支持实时多人协作，原生编译速度极快。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude Sonnet 4.6 (via Zed AI), Zed models quota, BYOK (any provider)",
+        zh: "Claude Sonnet 4.6 (通过 Zed AI), Zed 模型配额, BYOK（支持任意模型提供商）"
+      },
+      limits: {
+        en: "Free tier with Zed AI included. Generous monthly AI usage quota. Bring your own API keys for unlimited use.",
+        zh: "免费版包含 Zed AI。每月 AI 使用配额充裕。可自带 API Key 无限使用。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "Free (Personal) | Custom (Business)",
+        zh: "免费（个人版）| 自定义（商业版）"
+      },
+      models: {
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro, DeepSeek, Llama, BYOK (any OpenAI-compatible)",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro, DeepSeek, Llama, BYOK (任意 OpenAI 兼容)"
+      },
+      limits: {
+        en: "Business: Priority support, admin controls, SSO, and enhanced AI quotas.",
+        zh: "商业版：优先支持、管理控制、SSO 和增强的 AI 配额。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Download from zed.dev. Sign up optional for AI features.",
+        zh: "从 zed.dev 下载。AI 功能需可选注册。"
+      },
+      requirements: {
+        en: "No account required for basic editing. Zed account needed for AI features.",
+        zh: "基本编辑无需账号。AI 功能需要 Zed 账号。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Full editor is free and open source. AI features included at no cost for personal use.",
+        zh: "编辑器完全免费开源。个人使用 AI 功能免费包含。"
+      }
+    },
+    extraInfo: {
+      en: "Built from scratch in Rust for maximum performance. Features real-time multiplayer collaboration, agentic editing, and compatibility with any model or agent provider.",
+      zh: "使用 Rust 从零构建以实现极致性能。特色功能：实时多人协作、Agent 编辑、兼容任意模型或 Agent 提供商。"
+    }
+  },
+  {
+    id: "bolt-new",
+    name: "Bolt.new",
+    category: "web",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://bolt.new",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "An AI-powered full-stack web application builder by StackBlitz. Build, edit, and deploy websites and apps directly in the browser with natural language prompts.",
+      zh: "由 StackBlitz 开发的 AI 驱动全栈 Web 应用构建器。通过自然语言提示在浏览器中直接构建、编辑和部署网站与应用。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude Sonnet 4.6 (default routing)",
+        zh: "Claude Sonnet 4.6（默认路由）"
+      },
+      limits: {
+        en: "300K tokens daily limit, 1M tokens per month. Public and private projects. 10MB file upload. Website hosting included.",
+        zh: "每日 30 万 token 限制，每月 100 万 token。支持公开和私有项目。10MB 文件上传限制。包含网站托管。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$25/mo (Pro) | $30/mo per member (Teams) | Custom (Enterprise)",
+        zh: "$25/月 (Pro) | $30/月/人 (Teams) | 自定义 (Enterprise)"
+      },
+      models: {
+        en: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 2.5 Pro (smart routing)",
+        zh: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 2.5 Pro（智能路由）"
+      },
+      limits: {
+        en: "Pro: 10M+ tokens/mo, no daily limit. Custom domain, SEO boosting, unlimited databases. Unused tokens roll over.",
+        zh: "Pro：每月 1000 万+ token，无每日限制。自定义域名、SEO 优化、无限数据库。未使用 token 可滚存。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up via Google, GitHub, or email at bolt.new.",
+        zh: "在 bolt.new 通过 Google、GitHub 或邮箱注册。"
+      },
+      requirements: {
+        en: "No credit card required for Free. Paid plans require payment method.",
+        zh: "免费版无需信用卡。付费版需要支付方式。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free tier available with generous token limits for getting started.",
+        zh: "提供免费版，配有充裕的 token 额度供上手使用。"
+      }
+    },
+    extraInfo: {
+      en: "Runs entirely in the browser using WebContainers technology. Supports full-stack apps with databases, backend APIs, and instant deployment.",
+      zh: "使用 WebContainers 技术完全在浏览器中运行。支持全栈应用，包含数据库、后端 API 和即时部署。"
+    }
+  },
+  {
+    id: "amazon-q",
+    name: "Amazon Q Developer",
+    category: "extension",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://aws.amazon.com/q/developer/",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "AWS's generative AI coding assistant. Provides code suggestions, chat, security scanning, and agent capabilities across VS Code, JetBrains, CLI, and AWS Console.",
+      zh: "AWS 的生成式 AI 编程助手。在 VS Code、JetBrains、CLI 和 AWS 控制台中提供代码建议、对话、安全扫描和 Agent 功能。"
+    },
+    freeTier: {
+      models: {
+        en: "Amazon Q (proprietary, based on multiple foundation models)",
+        zh: "Amazon Q（自研，基于多个基础模型）"
+      },
+      limits: {
+        en: "Individual tier: Unlimited code suggestions, limited chat and agent interactions per month.",
+        zh: "个人版：无限代码建议，每月有限的对话和 Agent 交互次数。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$19/mo per user (Pro) | Custom (Enterprise)",
+        zh: "$19/月/用户 (Pro) | 自定义 (Enterprise)"
+      },
+      models: {
+        en: "Amazon Q (proprietary multi-model routing)",
+        zh: "Amazon Q（自研多模型路由）"
+      },
+      limits: {
+        en: "Pro: Increased limits on chat, agent, and code transformation. Enterprise: SSO, admin controls, custom policies.",
+        zh: "Pro：增加对话、Agent 和代码转换的使用限制。Enterprise：SSO、管理控制、自定义策略。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up with an AWS Builder ID (free) or use existing AWS account.",
+        zh: "使用 AWS Builder ID（免费）注册或使用现有 AWS 账号。"
+      },
+      requirements: {
+        en: "AWS Builder ID required (free to create). Pro requires AWS account with billing.",
+        zh: "需要 AWS Builder ID（免费创建）。Pro 版需要有账单功能的 AWS 账号。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free Individual tier available. Pro tier sometimes includes trial periods.",
+        zh: "提供免费个人版。Pro 版有时包含试用期。"
+      }
+    },
+    extraInfo: {
+      en: "Deep integration with AWS services. Features '/transform' for Java upgrades, security scanning, and infrastructure-as-code generation.",
+      zh: "与 AWS 服务深度集成。特色功能包括 '/transform' Java 升级、安全扫描和基础设施即代码生成。"
+    }
+  },
+  {
+    id: "jetbrains-ai",
+    name: "JetBrains AI Assistant",
+    category: "extension",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://www.jetbrains.com/ai/",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "Built-in AI assistant for all JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.). Provides AI chat, code completion, refactoring suggestions, and Junie coding agent.",
+      zh: "所有 JetBrains IDE（IntelliJ IDEA、PyCharm、WebStorm 等）的内置 AI 助手。提供 AI 对话、代码补全、重构建议和 Junie 编程 Agent。"
+    },
+    freeTier: {
+      models: {
+        en: "JetBrains AI (multi-model: Claude Sonnet 4.6, GPT-4.1, Gemini 2.5 Pro, Junie agent)",
+        zh: "JetBrains AI（多模型：Claude Sonnet 4.6, GPT-4.1, Gemini 2.5 Pro, Junie Agent）"
+      },
+      limits: {
+        en: "AI Free tier: Limited daily AI requests. Included with all JetBrains IDE downloads.",
+        zh: "AI 免费版：每日 AI 请求次数有限。随所有 JetBrains IDE 下载附带。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "Included with JetBrains All Products Pack ($28.90/mo) | AI Pro Add-on available",
+        zh: "包含在 JetBrains All Products Pack ($28.90/月) 中 | 可购买 AI Pro 附加包"
+      },
+      models: {
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, Junie (coding agent)",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, Junie（编程 Agent）"
+      },
+      limits: {
+        en: "Full AI Pro: Unlimited AI chat and code completion. Full Junie agent capabilities. Multiple model selection.",
+        zh: "AI Pro 全量版：无限 AI 对话和代码补全。完整 Junie Agent 功能。支持多模型选择。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Download any JetBrains IDE. AI features available after JetBrains account login.",
+        zh: "下载任意 JetBrains IDE。登录 JetBrains 账号后可使用 AI 功能。"
+      },
+      requirements: {
+        en: "JetBrains account required. AI Pro requires active IDE subscription or separate AI add-on.",
+        zh: "需要 JetBrains 账号。AI Pro 需要有效 IDE 订阅或单独购买 AI 附加包。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "AI Free tier available for all users. JetBrains IDE Community editions are free.",
+        zh: "所有用户均可使用 AI 免费版。JetBrains IDE 社区版免费。"
+      }
+    },
+    extraInfo: {
+      en: "Leverages JetBrains' deep code analysis capabilities. Junie agent can run tests, fix errors, and perform multi-step coding tasks autonomously.",
+      zh: "利用 JetBrains 深度代码分析能力。Junie Agent 可以自主运行测试、修复错误和执行多步骤编码任务。"
+    }
+  },
+  {
+    id: "amp",
+    name: "Amp (Sourcegraph)",
+    category: "cli",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://ampcode.com",
+    github: "",
+    installCmd: "npm install -g @anthropic/amp",
+    desc: {
+      en: "Sourcegraph's agentic coding tool (formerly Cody Agent). An AI coding agent that works in the terminal or as a VS Code extension with deep codebase understanding.",
+      zh: "Sourcegraph 的 Agent 编程工具（前身为 Cody Agent）。一个可在终端或 VS Code 扩展中使用的 AI 编程 Agent，具备深度代码库理解能力。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude Sonnet 4.6 (via Sourcegraph proxy)",
+        zh: "Claude Sonnet 4.6（通过 Sourcegraph 代理）"
+      },
+      limits: {
+        en: "Free tier with generous usage limits. Automatic codebase context retrieval.",
+        zh: "免费版提供充裕的使用额度。自动检索代码库上下文。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$19/mo (Pro) | Custom (Enterprise)",
+        zh: "$19/月 (Pro) | 自定义 (Enterprise)"
+      },
+      models: {
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro, BYOK",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro, BYOK"
+      },
+      limits: {
+        en: "Pro: Increased usage limits and priority access. Enterprise: Unlimited with self-hosted Sourcegraph.",
+        zh: "Pro：增加使用限制和优先访问。Enterprise：自托管 Sourcegraph 无限使用。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Install via npm or VS Code marketplace. Sign in with Sourcegraph account.",
+        zh: "通过 npm 或 VS Code 市场安装。使用 Sourcegraph 账号登录。"
+      },
+      requirements: {
+        en: "Sourcegraph account required (free to create).",
+        zh: "需要 Sourcegraph 账号（免费创建）。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free tier available for individual developers.",
+        zh: "为个人开发者提供免费版。"
+      }
+    },
+    extraInfo: {
+      en: "Successor to Sourcegraph Cody's agent mode. Deep code graph understanding from Sourcegraph's search infrastructure. Works alongside Cody for complementary capabilities.",
+      zh: "Sourcegraph Cody Agent 模式的继任者。依托 Sourcegraph 搜索基础设施实现深度代码图谱理解。可与 Cody 配合使用实现功能互补。"
+    }
   }
 ];
 
@@ -1195,6 +1667,7 @@ const translations = {
     tabIde: "AI-First IDEs",
     tabCli: "CLI Agents",
     tabExtension: "VS Code Extensions",
+    tabWeb: "Web Builders",
     filterFree: "Has Free Tier",
     filterOs: "Open Source",
     btnDetails: "Details",
@@ -1275,6 +1748,7 @@ const translations = {
     tabIde: "AI 原生 IDE",
     tabCli: "CLI 智能体",
     tabExtension: "VS Code 插件",
+    tabWeb: "Web 构建器",
     filterFree: "有免费额度",
     filterOs: "开源项目",
     btnDetails: "查看详情",
@@ -1430,6 +1904,7 @@ function applyStaticTranslations() {
   document.getElementById("tab-ide").textContent = t.tabIde;
   document.getElementById("tab-cli").textContent = t.tabCli;
   document.getElementById("tab-extension").textContent = t.tabExtension;
+  document.getElementById("tab-web").textContent = t.tabWeb;
   
   // Checkbox filters
   freeFilterLabelSpan.textContent = t.filterFree;
@@ -1856,7 +2331,15 @@ const suggestionsData = {
     { value: "Replit Agent", label: "Replit Agent", type: "tool", icon: "layout" },
     { value: "Tabnine", label: "Tabnine", type: "tool", icon: "layers" },
     { value: "PearAI", label: "PearAI", type: "tool", icon: "layout" },
-    { value: "OpenHands", label: "OpenHands", type: "tool", icon: "terminal" }
+    { value: "OpenHands", label: "OpenHands", type: "tool", icon: "terminal" },
+    { value: "Google Antigravity", label: "Google Antigravity", type: "tool", icon: "layout" },
+    { value: "Augment Code", label: "Augment Code", type: "tool", icon: "layers" },
+    { value: "Devin", label: "Devin (Cognition)", type: "tool", icon: "terminal" },
+    { value: "Zed", label: "Zed", type: "tool", icon: "layout" },
+    { value: "Bolt.new", label: "Bolt.new (StackBlitz)", type: "tool", icon: "globe" },
+    { value: "Amazon Q Developer", label: "Amazon Q Developer", type: "tool", icon: "layers" },
+    { value: "JetBrains AI Assistant", label: "JetBrains AI Assistant", type: "tool", icon: "layers" },
+    { value: "Amp (Sourcegraph)", label: "Amp (Sourcegraph)", type: "tool", icon: "terminal" }
   ],
   models: [
     { value: "Claude Sonnet 4.6", label: "Claude Sonnet 4.6", type: "model", icon: "cpu" },
