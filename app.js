@@ -29,8 +29,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $60/月 (Pro+) | $200/月 (Ultra)"
       },
       models: {
-        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, DeepSeek V4 Pro, Composer 2.5",
-        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, DeepSeek V4 Pro, Composer 2.5"
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, GPT-4.1 Nano, Gemini 3.1 Pro, Gemini 2.5 Pro, DeepSeek V4 Pro, Grok 4.3, Composer 2.5",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, GPT-4.1 Nano, Gemini 3.1 Pro, Gemini 2.5 Pro, DeepSeek V4 Pro, Grok 4.3, Composer 2.5"
       },
       limits: {
         en: "Pro: Unlimited autocomplete & Auto mode, plus a $20/mo credit pool for premium models.",
@@ -88,8 +88,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $200/月 (Max)"
       },
       models: {
-        en: "SWE-1.6, Claude Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V4",
-        zh: "SWE-1.6, Claude Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V4"
+        en: "SWE-1.6, SWE-1.6 Fast, SWE-1.5, Claude Opus 4.7, Claude Sonnet 4.6, GPT-4o, DeepSeek R1, Gemini 3 Pro",
+        zh: "SWE-1.6, SWE-1.6 Fast, SWE-1.5, Claude Opus 4.7, Claude Sonnet 4.6, GPT-4o, DeepSeek R1, Gemini 3 Pro"
       },
       limits: {
         en: "Pro: Standard daily/weekly usage quota, unlimited Tab completions, unlimited inline Command edits.",
@@ -265,8 +265,8 @@ const toolsData = [
         zh: "包含在 ChatGPT Plus ($20/月) / Pro ($200/月) 或通过 API Key 付费"
       },
       models: {
-        en: "GPT-5.5, GPT-5.5 Pro, GPT-5.4, GPT-4.1",
-        zh: "GPT-5.5, GPT-5.5 Pro, GPT-5.4, GPT-4.1"
+        en: "GPT-5.5, GPT-5.4, GPT-5.4-mini, GPT-5.3-Codex, GPT-5.3-Codex-Spark",
+        zh: "GPT-5.5, GPT-5.4, GPT-5.4-mini, GPT-5.3-Codex, GPT-5.3-Codex-Spark"
       },
       limits: {
         en: "Token-based credit system. API key mode allows pay-as-you-go billing directly per million tokens.",
@@ -605,8 +605,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)",
-        zh: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)"
+        en: "Claude Sonnet 4.6, GPT-5.4 mini (50 premium requests/mo)",
+        zh: "Claude Sonnet 4.6, GPT-5.4 mini (每月 50 次高级请求)"
       },
       limits: {
         en: "Free for verified students, educators, and maintainers of popular open-source projects.",
@@ -619,8 +619,8 @@ const toolsData = [
         zh: "$10/月 (Pro) | $39/月 (Pro+) | $19/用户/月 (Business) | $39/用户/月 (Enterprise)"
       },
       models: {
-        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-5.4, Gemini 2.5 Pro",
-        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-5.4, Gemini 2.5 Pro"
+        en: "Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 4.6, Claude Haiku 4.5, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5.3-Codex",
+        zh: "Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 4.6, Claude Haiku 4.5, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5.3-Codex"
       },
       limits: {
         en: "Subscribers receive 'GitHub AI Credits' for agent/chat commands. Autocomplete and 'Next Edit' suggestions do not consume credits.",
@@ -737,8 +737,8 @@ const toolsData = [
         zh: "仅限企业级客户 (约 $59/用户/月)"
       },
       models: {
-        en: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)",
-        zh: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)"
+        en: "Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.1, Gemini 3 Pro, Gemini 2.5 Pro, StarCoder 3",
+        zh: "Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.1, Gemini 3 Pro, Gemini 2.5 Pro, StarCoder 3"
       },
       limits: {
         en: "Requires custom corporate contract. Integrates with enterprise codebases and supports custom models.",
@@ -841,8 +841,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, Doubao 1.5 Pro",
-        zh: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, 豆包 1.5 Pro"
+        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, GPT-4o, Gemini 2.5 Pro/Flash, DeepSeek R1, DeepSeek V3, Doubao-Code, Grok, Kimi",
+        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, GPT-4o, Gemini 2.5 Pro/Flash, DeepSeek R1, DeepSeek V3, 豆包, Grok, Kimi"
       },
       limits: {
         en: "Free Plan: Standard daily chat and autocomplete quotas (subject to fair use).",
@@ -855,8 +855,8 @@ const toolsData = [
         zh: "$3/月 (Lite) | $10/月 (Pro) | $30/月 (Pro+) | $100/月 (Ultra)"
       },
       models: {
-        en: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, Doubao 1.5 Pro-Pro",
-        zh: "所有免费模型 + Qwen3-Coder，更高配额，完整 SOLO 和 Builder 模式"
+        en: "All free models + higher quotas, full SOLO and Builder agent modes, priority access",
+        zh: "所有免费模型 + 更高配额，完整 SOLO 和 Builder 模式，优先访问"
       },
       limits: {
         en: "Pro plan increases daily limits and offers higher priority access to advanced models.",
@@ -900,8 +900,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Qwen-Coder-Qoder (custom RL-optimized model)",
-        zh: "Qwen-Coder-Qoder (自研强化学习优化模型)"
+        en: "Qwen-Coder-Qoder (custom RL-optimized), Qwen3 series, DeepSeek-v3, DeepSeek-r1",
+        zh: "Qwen-Coder-Qoder (自研强化学习优化模型), Qwen3 系列, DeepSeek-v3, DeepSeek-r1"
       },
       limits: {
         en: "Free Individual Edition: Unlimited basic code completions and general Q&A.",
@@ -914,8 +914,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $32/用户/月 (企业专属版)"
       },
       models: {
-        en: "Qwen3-Coder, Qwen-Coder-Qoder, multi-model (GLM, DeepSeek, Kimi, MiniMax)",
-        zh: "Qwen-Coder-Qoder (自研强化学习优化模型)-72B 企业定制版"
+        en: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, qwen2.5-max, multi-model (DeepSeek, Kimi, MiniMax, GLM)",
+        zh: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, qwen2.5-max, 多模型 (DeepSeek, Kimi, MiniMax, GLM)"
       },
       limits: {
         en: "Enterprise plan adds proprietary knowledge base retrieval, custom model fine-tuning, and dedicated inference pipelines.",
@@ -973,8 +973,8 @@ const toolsData = [
         zh: "$20–$25/月 (Core) | $100/月 (Pro 版)"
       },
       models: {
-        en: "Multi-model: Claude (Anthropic), Gemini (Google), GPT-4o (OpenAI)",
-        zh: "Multi-model: Claude (Anthropic), Gemini (Google), GPT-4o (OpenAI)"
+        en: "Multi-model routing: Claude (Anthropic), Gemini (Google), GPT (OpenAI), Llama, Grok, Mistral (via OpenRouter)",
+        zh: "多模型智能路由：Claude (Anthropic), Gemini (Google), GPT (OpenAI), Llama, Grok, Mistral (经 OpenRouter)"
       },
       limits: {
         en: "Core plan includes $20/mo credit pool. Billed dynamically per session based on task effort.",
@@ -1032,8 +1032,8 @@ const toolsData = [
         zh: "$39/用户/月 (代码助手) | $59/用户/月 (Agent 平台)"
       },
       models: {
-        en: "Tabnine Protected, Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.4, Gemini 3 Pro, Qwen3-Coder",
-        zh: "Tabnine 自研保护版, Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.4, Gemini 3 Pro, Qwen3-Coder"
+        en: "Tabnine Protected, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5 series, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+",
+        zh: "Tabnine 自研保护版, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5 系列, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+"
       },
       limits: {
         en: "Pro/Dev: Unlimited chat & completions. Agentic: Adds autonomous multi-step code refactoring agents.",
@@ -1852,7 +1852,7 @@ const suggestionsData = {
     { value: "Sourcegraph Cody", label: "Sourcegraph Cody", type: "tool", icon: "layers" },
     { value: "Supermaven", label: "Supermaven", type: "tool", icon: "layers" },
     { value: "Trae", label: "Trae (ByteDance Trae)", type: "tool", icon: "layout" },
-    { value: "Qoder CN", label: "Qoder CN (通义灵码)", type: "tool", icon: "layers" },
+    { value: "Tongyi Lingma", label: "Tongyi Lingma (通义灵码)", type: "tool", icon: "layers" },
     { value: "Replit Agent", label: "Replit Agent", type: "tool", icon: "layout" },
     { value: "Tabnine", label: "Tabnine", type: "tool", icon: "layers" },
     { value: "PearAI", label: "PearAI", type: "tool", icon: "layout" },
@@ -1861,15 +1861,19 @@ const suggestionsData = {
   models: [
     { value: "Claude Sonnet 4.6", label: "Claude Sonnet 4.6", type: "model", icon: "cpu" },
     { value: "Claude Opus 4.7", label: "Claude Opus 4.7", type: "model", icon: "cpu" },
+    { value: "Claude Opus 4.6", label: "Claude Opus 4.6", type: "model", icon: "cpu" },
     { value: "Claude Haiku 4.5", label: "Claude Haiku 4.5", type: "model", icon: "cpu" },
-    { value: "GPT-4o", label: "GPT-4o", type: "model", icon: "cpu" },
     { value: "GPT-5.5", label: "GPT-5.5", type: "model", icon: "cpu" },
-    { value: "DeepSeek", label: "DeepSeek V4", type: "model", icon: "cpu" },
-    { value: "Gemini", label: "Gemini 3.1 Pro", type: "model", icon: "cpu" },
-    { value: "Ollama", label: "Ollama (Local LLMs)", type: "model", icon: "cpu" },
+    { value: "GPT-5.4", label: "GPT-5.4", type: "model", icon: "cpu" },
+    { value: "GPT-4o", label: "GPT-4o", type: "model", icon: "cpu" },
+    { value: "Grok 4.3", label: "Grok 4.3 (xAI)", type: "model", icon: "cpu" },
+    { value: "DeepSeek", label: "DeepSeek (R1/V3/V4)", type: "model", icon: "cpu" },
+    { value: "Gemini", label: "Gemini 3 Pro / 2.5 Pro", type: "model", icon: "cpu" },
     { value: "SWE-1.6", label: "SWE-1.6 (Windsurf)", type: "model", icon: "cpu" },
-    { value: "Doubao", label: "Doubao 1.5 Pro (Trae)", type: "model", icon: "cpu" },
-    { value: "Qwen3-Coder", label: "Qwen3-Coder", type: "model", icon: "cpu" }
+    { value: "Qwen3-Coder", label: "Qwen3-Coder", type: "model", icon: "cpu" },
+    { value: "Doubao", label: "Doubao-Code (Trae)", type: "model", icon: "cpu" },
+    { value: "Ollama", label: "Ollama (Local LLMs)", type: "model", icon: "cpu" },
+    { value: "Devstral", label: "Devstral (Mistral)", type: "model", icon: "cpu" }
   ],
   filters: [
     { value: "Open Source", label_en: "Open Source", label_zh: "开源项目", type: "filter", icon: "github", action: "os" },
