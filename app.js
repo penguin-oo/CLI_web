@@ -714,6 +714,7 @@ const translations = {
     filterFree: "Has Free Tier",
     filterOs: "Open Source",
     btnDetails: "View Details",
+    btnWebsite: "Website",
     btnCompare: "Compare Selected",
     btnClear: "Clear All",
     comparingText: "Comparing:",
@@ -791,6 +792,7 @@ const translations = {
     filterFree: "有免费额度",
     filterOs: "开源项目",
     btnDetails: "查看详情",
+    btnWebsite: "官网",
     btnCompare: "对比所选",
     btnClear: "清空对比",
     comparingText: "正在对比：",
@@ -867,6 +869,8 @@ let activeSuggestIndex = -1; // Autocomplete keyboard index
 // DOM Elements
 const langToggleBtn = document.getElementById("lang-toggle-btn");
 const langBtnText = document.getElementById("lang-btn-text");
+const langToggleBtnInline = document.getElementById("lang-toggle-btn-inline");
+const langBtnTextInline = document.getElementById("lang-btn-text-inline");
 const heroTitle = document.getElementById("hero-title");
 const heroDesc = document.getElementById("hero-desc");
 const badgeTag = document.getElementById("badge-tag");
@@ -916,6 +920,9 @@ function applyStaticTranslations() {
 
   // Toggle button shows the OTHER language to switch to
   langBtnText.textContent = currentLang === "zh" ? "English" : "中文";
+  if (langBtnTextInline) {
+    langBtnTextInline.textContent = currentLang === "zh" ? "English" : "中文";
+  }
   
   // Update header content
   badgeTag.innerHTML = `<i data-lucide="cpu" style="width: 14px; height: 14px;"></i> ${t.badgeTag}`;
@@ -1104,6 +1111,10 @@ function renderTools() {
       
       <div class="card-actions">
         <button class="btn btn-primary" onclick="openDetails('${tool.id}')">${t.btnDetails}</button>
+        <a href="${tool.website}" target="_blank" class="btn" title="${t.btnWebsite}">
+          <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+          <span>${t.btnWebsite}</span>
+        </a>
         <label class="compare-check ${isChecked ? 'checked' : ''}" title="${t.btnCompare}">
           <input type="checkbox" onchange="toggleCompare('${tool.id}')" ${isChecked ? 'checked' : ''}>
           <i data-lucide="${isChecked ? 'check' : 'plus'}"></i>
@@ -1533,8 +1544,7 @@ function renderSuggestionsList(query) {
   activeSuggestIndex = -1;
 }
 
-// Event Listeners
-langToggleBtn.addEventListener("click", () => {
+function toggleLanguage() {
   currentLang = currentLang === "zh" ? "en" : "zh";
   localStorage.setItem("cli_web_lang", currentLang);
   
@@ -1542,7 +1552,12 @@ langToggleBtn.addEventListener("click", () => {
   renderTools();
   updateCompareBar();
   closeSuggestions();
-});
+}
+
+langToggleBtn.addEventListener("click", toggleLanguage);
+if (langToggleBtnInline) {
+  langToggleBtnInline.addEventListener("click", toggleLanguage);
+}
 
 searchInput.addEventListener("input", (e) => {
   searchFilter = e.target.value;
