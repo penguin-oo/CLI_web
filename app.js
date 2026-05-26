@@ -1,5 +1,6 @@
 const toolsData = [
   {
+    status: "active",
     id: "cursor",
     name: "Cursor",
     category: "ide",
@@ -58,6 +59,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "windsurf",
     name: "Windsurf",
     category: "ide",
@@ -116,6 +118,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "kiro",
     name: "Kiro (AWS Kiro)",
     category: "ide",
@@ -174,6 +177,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "claudecode",
     name: "Claude Code",
     category: "cli",
@@ -232,6 +236,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "openai-codex",
     name: "OpenAI Codex",
     category: "cli",
@@ -290,6 +295,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "opencode",
     name: "OpenCode",
     category: "cli",
@@ -348,6 +354,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "atomcode",
     name: "AtomCode",
     category: "cli",
@@ -406,6 +413,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "aider",
     name: "Aider",
     category: "cli",
@@ -464,6 +472,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "cline",
     name: "Cline",
     category: "extension",
@@ -522,6 +531,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "continue",
     name: "Continue",
     category: "extension",
@@ -580,6 +590,7 @@ const toolsData = [
     }
   },
   {
+    status: "active",
     id: "github-copilot",
     name: "GitHub Copilot",
     category: "extension",
@@ -638,6 +649,7 @@ const toolsData = [
     }
   },
   {
+    status: "inactive",
     id: "roo-code",
     name: "Roo Code",
     category: "extension",
@@ -1078,7 +1090,6 @@ function renderTools() {
           ${statusLabel}
         </span>
       </div>
-      <p class="tool-desc" title="${descText}">${descText}</p>
       
       <div class="info-section">
         <!-- Free Tier Section -->
