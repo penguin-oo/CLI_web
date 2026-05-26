@@ -1,11 +1,10 @@
 const toolsData = [
   {
-    status: "active",
     id: "cursor",
     name: "Cursor",
     category: "ide",
     isOpenSource: false,
-    hasFreeTier: true,
+    status: "active",
     website: "https://cursor.com",
     github: "",
     installCmd: "",
@@ -15,8 +14,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Cursor-small, Claude 3.5 Sonnet (limited)",
-        zh: "Cursor-small, Claude 3.5 Sonnet (受限)"
+        en: "Cursor-small, Claude 3.5 Sonnet (limited), GPT-4o (limited)",
+        zh: "Cursor-small, Claude 3.5 Sonnet (限额), GPT-4o (限额)"
       },
       limits: {
         en: "Hobby Plan: Limited daily/monthly Agent requests, standard Tab autocompletes.",
@@ -29,8 +28,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $60/月 (Pro+) | $200/月 (Ultra)"
       },
       models: {
-        en: "Claude 3.5/3.7 Sonnet, GPT-4o, GPT-5",
-        zh: "Claude 3.5/3.7 Sonnet, GPT-4o, GPT-5"
+        en: "Claude 3.5/3.7 Sonnet, GPT-4o, o1, o1-pro, o3-mini, GPT-5",
+        zh: "Claude 3.5/3.7 Sonnet, GPT-4o, o1, o1-pro, o3-mini, GPT-5"
       },
       limits: {
         en: "Pro: Unlimited autocomplete & Auto mode, plus a $20/mo credit pool for premium models.",
@@ -59,12 +58,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "windsurf",
     name: "Windsurf",
     category: "ide",
     isOpenSource: false,
-    hasFreeTier: true,
+    status: "active",
     website: "https://codeium.com/windsurf",
     github: "",
     installCmd: "",
@@ -74,8 +72,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Cascade (proprietary Codeium models, light quota)",
-        zh: "Cascade (Codeium 自研模型，轻度额度)"
+        en: "Cascade (Base), Claude 3.5 Sonnet, GPT-4o",
+        zh: "Cascade (基础版), Claude 3.5 Sonnet, GPT-4o"
       },
       limits: {
         en: "Free Plan: Limited daily usage quota, unlimited Tab completions.",
@@ -88,8 +86,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $200/月 (Max)"
       },
       models: {
-        en: "SWE-1, SWE-1.5, Claude Sonnet 4.6, GPT-5, Gemini 3.1 Pro",
-        zh: "SWE-1, SWE-1.5, Claude Sonnet 4.6, GPT-5, Gemini 3.1 Pro"
+        en: "SWE-1.5, Claude 3.5/3.7 Sonnet, GPT-4o, o1, Gemini 1.5 Pro",
+        zh: "SWE-1.5, Claude 3.5/3.7 Sonnet, GPT-4o, o1, Gemini 1.5 Pro"
       },
       limits: {
         en: "Pro: Standard daily/weekly usage quota, unlimited Tab completions, unlimited inline Command edits.",
@@ -118,12 +116,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "kiro",
     name: "Kiro (AWS Kiro)",
     category: "ide",
     isOpenSource: false,
-    hasFreeTier: true,
+    status: "active",
     website: "https://kiro.dev",
     github: "https://github.com/aws/kiro",
     installCmd: "",
@@ -133,8 +130,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude Sonnet 4.5, open-weight models",
-        zh: "Claude Sonnet 4.5, 开源权重模型"
+        en: "Claude 3.5 Sonnet, Llama 3 70B, Q Developer",
+        zh: "Claude 3.5 Sonnet, Llama 3 70B, Q Developer"
       },
       limits: {
         en: "Free Plan: 50 credits/month (perpetual, reset monthly).",
@@ -147,8 +144,8 @@ const toolsData = [
         zh: "$20/月 (Pro: 1000点数) | $40/月 (Pro+: 2000点数) | $200/月 (Power: 10000点数)"
       },
       models: {
-        en: "Claude 4.5/4.6, Claude Opus, various premium models",
-        zh: "Claude 4.5/4.6, Claude Opus, various premium models"
+        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku, Titan",
+        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku, Titan"
       },
       limits: {
         en: "Credits consumed fractionally based on task complexity. Overage option: $0.04 per additional credit.",
@@ -177,12 +174,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "claudecode",
     name: "Claude Code",
     category: "cli",
     isOpenSource: false,
-    hasFreeTier: false,
+    status: "active",
     website: "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code",
     github: "",
     installCmd: "npm install -g @anthropic/claude-code",
@@ -206,8 +202,8 @@ const toolsData = [
         zh: "$20/月 (Pro 订阅) 或 按需付费 API"
       },
       models: {
-        en: "Claude Sonnet (default Sonnet 4.6), Claude Opus 4.6/4.7",
-        zh: "Claude Sonnet (默认 Sonnet 4.6), Claude Opus 4.6/4.7"
+        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku",
+        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku"
       },
       limits: {
         en: "Pro plan: Subject to standard Web/App token quotas (resetting every 5 hours). API plan: Billed per token.",
@@ -221,7 +217,7 @@ const toolsData = [
       },
       requirements: {
         en: "Anthropic Console account with billing set up (for API) or Claude Pro consumer subscription.",
-        zh: "已设置计费的 Anthropic Console 账户（用于 API）或已订阅 Claude Pro 的个人账户。"
+        zh: "已设置计费 of Anthropic Console 账户（用于 API）或已订阅 Claude Pro 的个人账户。"
       }
     },
     promotions: {
@@ -236,12 +232,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "openai-codex",
     name: "OpenAI Codex",
     category: "cli",
     isOpenSource: false,
-    hasFreeTier: true,
+    status: "active",
     website: "https://github.com/openai/codex",
     github: "https://github.com/openai/codex",
     installCmd: "npm i -g @openai/codex",
@@ -251,8 +246,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "GPT-5.4-Mini (via ChatGPT free limits)",
-        zh: "GPT-5.4-Mini (使用 ChatGPT 免费额度)"
+        en: "GPT-4o-mini (via ChatGPT free limits)",
+        zh: "GPT-4o-mini (使用 ChatGPT 免费额度)"
       },
       limits: {
         en: "Strict request limits under standard ChatGPT free tier.",
@@ -265,8 +260,8 @@ const toolsData = [
         zh: "包含在 ChatGPT Plus ($20/月) / Pro ($200/月) 或通过 API Key 付费"
       },
       models: {
-        en: "GPT-5.5, GPT-5.4-Mini, custom agent models",
-        zh: "GPT-5.5, GPT-5.4-Mini, 专属智能体模型"
+        en: "GPT-4o, o1, o3-mini, GPT-4",
+        zh: "GPT-4o, o1, o3-mini, GPT-4"
       },
       limits: {
         en: "Token-based credit system. API key mode allows pay-as-you-go billing directly per million tokens.",
@@ -295,12 +290,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "opencode",
     name: "OpenCode",
     category: "cli",
     isOpenSource: true,
-    hasFreeTier: true,
+    status: "active",
     website: "https://opencode.ai",
     github: "https://github.com/opencode/opencode",
     installCmd: "go install github.com/opencode/opencode@latest",
@@ -310,8 +304,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Any local model (Ollama) or bring your own API keys (free app)",
-        zh: "任何本地模型 (Ollama) 或自带 API Key (免费运行)"
+        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
+        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
       },
       limits: {
         en: "100% free to run. Limits are determined by your own API keys/local computer capacity.",
@@ -324,8 +318,8 @@ const toolsData = [
         zh: "$10/月 (OpenCode Go) | 按需付费 (OpenCode Zen)"
       },
       models: {
-        en: "Curated agent models (GLM, Kimi, MiniMax, DeepSeek, Claude)",
-        zh: "Curated agent models (GLM, Kimi, MiniMax, DeepSeek, Claude)"
+        en: "GLM-4, Kimi-Chat, DeepSeek-R1, Claude 3.5 Sonnet, GPT-4o",
+        zh: "GLM-4, Kimi-Chat, DeepSeek-R1, Claude 3.5 Sonnet, GPT-4o"
       },
       limits: {
         en: "OpenCode Go: Usage-based pricing capping at $12 per 5 hours / $60 per month. Zen: Pay-as-you-go at cost.",
@@ -354,12 +348,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "atomcode",
     name: "AtomCode",
     category: "cli",
     isOpenSource: true,
-    hasFreeTier: true,
+    status: "active",
     website: "https://atomgit.com/atomcode/atomcode",
     github: "https://atomgit.com/atomcode/atomcode",
     installCmd: "cargo install atomcode",
@@ -369,8 +362,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude, GPT-4o, DeepSeek, local Ollama)",
-        zh: "BYOK (Claude, GPT-4o, DeepSeek, 本地 Ollama)"
+        en: "BYOK (Ollama local, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
+        zh: "BYOK (本地 Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
       },
       limits: {
         en: "100% free open-source CLI. Billed directly by your selected LLM API providers.",
@@ -383,8 +376,8 @@ const toolsData = [
         zh: "无 (免费软件)"
       },
       models: {
-        en: "Any API-compatible model",
-        zh: "任何兼容 API 的模型"
+        en: "BYOK (Ollama: DeepSeek-R1, Qwen-2.5; Cloud: Claude 3.5 Sonnet, GPT-4o)",
+        zh: "BYOK (本地: DeepSeek-R1, Qwen-2.5; 云端: Claude 3.5 Sonnet, GPT-4o)"
       },
       limits: {
         en: "Self-hosted / BYOK. Billed by third-party model providers.",
@@ -409,16 +402,15 @@ const toolsData = [
     },
     extraInfo: {
       en: "Features a built-in token cost estimation database to help you track how much your API keys are spending.",
-      zh: "内置 Token 消费估算数据库，帮助您直观监测和统计 API Key 的具体花费。"
+      zh: "内置 Token 消费估算数据库，帮助您直观监测 and 统计 API Key 的具体花费。"
     }
   },
   {
-    status: "active",
     id: "aider",
     name: "Aider",
     category: "cli",
     isOpenSource: true,
-    hasFreeTier: true,
+    status: "active",
     website: "https://aider.chat",
     github: "https://github.com/paul-gauthier/aider",
     installCmd: "pip install aider-chat",
@@ -428,8 +420,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek, Ollama local)",
-        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek, 本地 Ollama)"
+        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Ollama)",
+        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Ollama)"
       },
       limits: {
         en: "100% free tool. No software fees. Run offline with local models for zero cost.",
@@ -442,8 +434,8 @@ const toolsData = [
         zh: "无 (免费软件)"
       },
       models: {
-        en: "Any OpenAI/Anthropic/Gemini/OpenRouter model",
-        zh: "任何 OpenAI/Anthropic/Gemini/OpenRouter 模型"
+        en: "BYOK (Claude 3.5 Sonnet, DeepSeek-R1, GPT-4o, Gemini 1.5 Pro)",
+        zh: "BYOK (Claude 3.5 Sonnet, DeepSeek-R1, GPT-4o, Gemini 1.5 Pro)"
       },
       limits: {
         en: "Billed directly by API providers based on your key usage.",
@@ -472,12 +464,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "cline",
     name: "Cline",
     category: "extension",
     isOpenSource: true,
-    hasFreeTier: true,
+    status: "active",
     website: "https://cline.bot",
     github: "https://github.com/cline/cline",
     installCmd: "VS Code Marketplace -> Search: 'Cline'",
@@ -487,8 +478,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, Gemini Pro, DeepSeek, Ollama)",
-        zh: "BYOK (Claude 3.5 Sonnet, Gemini Pro, DeepSeek, Ollama)"
+        en: "BYOK (Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek-R1)",
+        zh: "BYOK (Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek-R1)"
       },
       limits: {
         en: "Free to use the VS Code extension. Billed by your API provider.",
@@ -501,8 +492,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $20/月 (团队)"
       },
       models: {
-        en: "Any API provider or local host",
-        zh: "任何 API 提供商或本地托管模型"
+        en: "BYOK (Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek-R1, GPT-4o)",
+        zh: "BYOK (Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek-R1, GPT-4o)"
       },
       limits: {
         en: "Teams plan includes shared proxies, administrative controls, centralized billing, and JetBrains IDE support.",
@@ -531,12 +522,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "continue",
     name: "Continue",
     category: "extension",
     isOpenSource: true,
-    hasFreeTier: true,
+    status: "active",
     website: "https://continue.dev",
     github: "https://github.com/continuedev/continue",
     installCmd: "VS Code Marketplace -> Search: 'Continue'",
@@ -546,8 +536,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Ollama local, OpenAI, Anthropic, Gemini, DeepSeek)",
-        zh: "BYOK (本地 Ollama, OpenAI, Anthropic, Gemini, DeepSeek)"
+        en: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
+        zh: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
       },
       limits: {
         en: "Extension is 100% free and open-source. Billed by model providers.",
@@ -560,8 +550,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $20/用户/月 (团队/企业版)"
       },
       models: {
-        en: "Any cloud/local model or Continue-managed premium model proxy",
-        zh: "任何云端/本地模型或 Continue 托管的付费模型代理"
+        en: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-V3/R1)",
+        zh: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-V3/R1)"
       },
       limits: {
         en: "Enterprise plan adds shared private context agents, custom security guardrails, and centralized API token management.",
@@ -590,12 +580,11 @@ const toolsData = [
     }
   },
   {
-    status: "active",
     id: "github-copilot",
     name: "GitHub Copilot",
     category: "extension",
     isOpenSource: false,
-    hasFreeTier: true,
+    status: "active",
     website: "https://github.com/features/copilot",
     github: "",
     installCmd: "VS Code Marketplace -> Search: 'GitHub Copilot'",
@@ -605,8 +594,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "GPT-4o, Claude 3.5 Sonnet",
-        zh: "GPT-4o, Claude 3.5 Sonnet"
+        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro",
+        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro"
       },
       limits: {
         en: "Free for verified students, educators, and maintainers of popular open-source projects.",
@@ -619,8 +608,8 @@ const toolsData = [
         zh: "$10/月 (Pro) | $39/月 (Pro+) | $19/用户/月 (Business) | $39/用户/月 (Enterprise)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, custom copilot models",
-        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, custom copilot models"
+        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, o1-mini, o1",
+        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, o1-mini, o1"
       },
       limits: {
         en: "Subscribers receive 'GitHub AI Credits' for agent/chat commands. Autocomplete and 'Next Edit' suggestions do not consume credits.",
@@ -649,12 +638,11 @@ const toolsData = [
     }
   },
   {
-    status: "inactive",
     id: "roo-code",
     name: "Roo Code",
     category: "extension",
     isOpenSource: true,
-    hasFreeTier: false,
+    status: "inactive",
     website: "https://roocode.com",
     github: "https://github.com/RooCline/Roo-Code",
     installCmd: "",
@@ -706,6 +694,470 @@ const toolsData = [
       en: "The project has officially shut down. Development team recommends users move to **Cline** or the community-maintained fork **ZooCode**.",
       zh: "该项目已官方关闭。开发团队建议用户迁移到 **Cline** 或使用社区维护的分支 **ZooCode**。"
     }
+  },
+  {
+    id: "cody",
+    name: "Sourcegraph Cody",
+    category: "extension",
+    isOpenSource: false,
+    status: "inactive",
+    website: "https://sourcegraph.com/cody",
+    github: "https://github.com/sourcegraph/cody",
+    installCmd: "VS Code Marketplace -> Search: 'Cody'",
+    desc: {
+      en: "Sourcegraph's AI coding assistant. Discontinued self-service Free/Pro plans in 2025; now sold exclusively as an Enterprise solution.",
+      zh: "Sourcegraph 旗下的 AI 编程助手。于 2025 年中止了面向个人开发者的免费和 Pro 订阅版，目前仅面向企业客户销售。"
+    },
+    freeTier: {
+      models: {
+        en: "None / Discontinued",
+        zh: "无 / 已下线"
+      },
+      limits: {
+        en: "Individual Free/Pro plans are discontinued. Sourcegraph launched a free experimental client called 'Amp' as an alternative.",
+        zh: "个人免费版和 Pro 版已下线。作为替代，推出了名为“Amp”的免费广告支持版进行测试。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "Enterprise only (~$59/user/mo)",
+        zh: "仅限企业级客户 (约 $59/用户/月)"
+      },
+      models: {
+        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro",
+        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro"
+      },
+      limits: {
+        en: "Requires custom corporate contract. Integrates with enterprise codebases and supports custom models.",
+        zh: "需要定制的企业级合同。可对接到企业内部私有代码库，支持定制模型。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Contact Sales via website.",
+        zh: "通过官网联系销售代表进行试用和签约。"
+      },
+      requirements: {
+        en: "Corporate email and enterprise contract negotiations.",
+        zh: "公司邮箱以及企业级签约合同谈判。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Enterprise POC trials available upon request.",
+        zh: "可申请企业级概念验证（POC）免费试用。"
+      }
+    },
+    extraInfo: {
+      en: "Features deep repository-wide context and SOC 2 security compliance.",
+      zh: "主打多仓库全局上下文感知和高规格企业级安全合规（SOC 2 等）。"
+    }
+  },
+  {
+    id: "supermaven",
+    name: "Supermaven",
+    category: "extension",
+    isOpenSource: false,
+    status: "inactive",
+    website: "https://supermaven.com",
+    github: "",
+    installCmd: "VS Code Marketplace -> Search: 'Supermaven'",
+    desc: {
+      en: "Known for its ultra-fast 300,000-token context window. Standalone extensions discontinued Nov 30, 2025, after being acquired by Cursor.",
+      zh: "曾以 30 万 Token 的极速上下文窗口补全而闻名。在被 Cursor 收购后，于 2025 年 11 月 30 日正式关闭了独立的插件运行。"
+    },
+    freeTier: {
+      models: {
+        en: "None / Discontinued",
+        zh: "无 / 已下线"
+      },
+      limits: {
+        en: "Standalone extension is discontinued. Technology is now integrated directly into Cursor editor.",
+        zh: "独立插件已停止运行。技术和功能已被整合进 Cursor 编辑器中。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "N/A",
+        zh: "不适用"
+      },
+      models: {
+        en: "N/A",
+        zh: "不适用"
+      },
+      limits: {
+        en: "Discontinued. Users are advised to subscribe to Cursor Pro for similar feature sets.",
+        zh: "已下线。建议用户订阅 Cursor Pro 以使用整合后的高上下文速记补全服务。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Discontinued. Migrate to Cursor.",
+        zh: "服务已终止，建议迁移到 Cursor 平台。"
+      },
+      requirements: {
+        en: "N/A",
+        zh: "不适用"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "N/A",
+        zh: "不适用"
+      }
+    },
+    extraInfo: {
+      en: "Supermaven's custom 'Hawthorne' model was famous for sub-second autocomplete latency.",
+      zh: "Supermaven 自研的 Hawthorne 模型曾以毫秒级的补全延迟响应时间在业界非常出名。"
+    }
+  },
+  {
+    id: "trae",
+    name: "Trae (ByteDance Trae)",
+    category: "ide",
+    isOpenSource: false,
+    status: "active",
+    website: "https://www.trae.ai/",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "ByteDance's AI native IDE successor to MarsCode, featuring 'SOLO' autonomous agent mode and deep code search integrations.",
+      zh: "字节跳动推出的 AI 原生 IDE（MarsCode 升级继任版），集成了“SOLO”自主代理模式以及火山引擎的深度代码搜索。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude 3.5 Sonnet, GPT-4o, Doubao-Code",
+        zh: "Claude 3.5 Sonnet, GPT-4o, 豆包大模型-代码版"
+      },
+      limits: {
+        en: "Free Plan: Standard daily chat and autocomplete quotas (subject to fair use).",
+        zh: "免费计划：标准的日常 Chat 对话和补全额度（受限于公平使用政策）。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "Free / $19.99/mo (Pro)",
+        zh: "免费 / 约 $19.99/月 (Pro 版)"
+      },
+      models: {
+        en: "Claude 3.5 Sonnet, GPT-4o, Doubao-Code-Pro",
+        zh: "Claude 3.5 Sonnet, GPT-4o, 豆包代码专业版"
+      },
+      limits: {
+        en: "Pro plan increases daily limits and offers higher priority access to advanced models.",
+        zh: "Pro 计划提供更高的每日请求额度以及对高级模型的优先低延迟访问权限。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up via Google, GitHub, or Phone number.",
+        zh: "支持使用 Google、GitHub 账号或手机号登录注册。"
+      },
+      requirements: {
+        en: "None for Free. Payment card for Pro.",
+        zh: "免费版无门槛，订阅 Pro 版需要绑定支付信用卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Often provides extended free trial phases or promotional low entry pricing (e.g. via Volcano Engine).",
+        zh: "常年提供较长的免费测试期，国内通过火山引擎推广时常有极低折扣的包月优惠。"
+      }
+    },
+    extraInfo: {
+      en: "Integrates closely with Volcano Engine cloud services. The SOLO agent is highly optimized for project-level refactoring.",
+      zh: "深度融合了火山引擎云服务生态。其内置的 SOLO 代理在进行项目级的重构和调试时表现优异。"
+    }
+  },
+  {
+    id: "lingma",
+    name: "Tongyi Lingma (通义灵码)",
+    category: "extension",
+    isOpenSource: false,
+    status: "active",
+    website: "https://tongyi.aliyun.com/lingma",
+    github: "",
+    installCmd: "VS Code Marketplace -> Search: 'Tongyi Lingma'",
+    desc: {
+      en: "Alibaba's major AI coding extension, highly popular in China. Based on Qwen models and integrated with Aliyun cloud services.",
+      zh: "阿里巴巴旗下的主力 AI 编程插件，在国内拥有庞大用户群。基于通义千问大模型构建，深度整合了阿里云服务生态。"
+    },
+    freeTier: {
+      models: {
+        en: "Qwen-2.5-Coder (Standard)",
+        zh: "通义千问 Qwen-2.5-Coder"
+      },
+      limits: {
+        en: "Free Individual Edition: Unlimited basic code completions and general Q&A.",
+        zh: "免费个人版：无限制的基础代码补全和常规 AI 问答对话。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "Free (Solo) | ~$32/user/mo (Enterprise Edition)",
+        zh: "免费 (个人) | 约 $32/用户/月 (企业专属版)"
+      },
+      models: {
+        en: "Qwen-2.5-Coder-72B (Enterprise Custom)",
+        zh: "通义千问 Qwen-2.5-Coder-72B 企业定制版"
+      },
+      limits: {
+        en: "Enterprise plan adds proprietary knowledge base retrieval, custom model fine-tuning, and dedicated inference pipelines.",
+        zh: "企业专属版增加了企业私有知识库检索、专属模型微调以及专用计算推理通道。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Log in with Alibaba Cloud or Taobao credentials.",
+        zh: "直接使用阿里云账号、淘宝账号授权登录。"
+      },
+      requirements: {
+        en: "Real-name verification might be required in the Chinese portal.",
+        zh: "中文官网使用需完成阿里云账号实名认证。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Individual version is permanently free. Enterprise trials are available upon application.",
+        zh: "个人版永久免费。企业版提供免费试用申请通道。"
+      }
+    },
+    extraInfo: {
+      en: "Features outstanding Chinese language comprehension and excels at generating local cloud deployment files.",
+      zh: "具备极佳的中文自然语言理解能力，针对国内开发环境和阿里云部署脚本的编写非常高效。"
+    }
+  },
+  {
+    id: "replit-agent",
+    name: "Replit Agent",
+    category: "ide",
+    isOpenSource: false,
+    status: "active",
+    website: "https://replit.com",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "Replit's powerful cloud-based autonomous agent, capable of building full-stack web applications from scratch from natural language.",
+      zh: "Replit 推出的云端自主 AI 代理。用户只需输入自然语言描述，它即可从零开始构建并部署完整的全栈 Web 应用。"
+    },
+    freeTier: {
+      models: {
+        en: "Replit-Agent (Light / Limited)",
+        zh: "Replit-Agent 限制体验版"
+      },
+      limits: {
+        en: "Starter (Free) plan offers highly limited daily Agent sessions and 1 active sandbox.",
+        zh: "免费计划提供非常有限的每日代理额度以及 1 个免费的应用运行沙盒。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$20–$25/mo (Core) | $100/mo (Pro)",
+        zh: "$20–$25/月 (Core) | $100/月 (Pro 版)"
+      },
+      models: {
+        en: "Replit-Agent-Pro, Claude 3.5 Sonnet, GPT-4o",
+        zh: "Replit-Agent-Pro, Claude 3.5 Sonnet, GPT-4o"
+      },
+      limits: {
+        en: "Core plan includes $20/mo credit pool. Billed dynamically per session based on task effort.",
+        zh: "Core 计划包含每月 20~25 美元等值积分。运行 Agent 时按任务复杂度动态消耗积分配额。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up via Google, GitHub, or Email on replit.com.",
+        zh: "在 replit.com 官网通过 Google、GitHub 账号或邮箱完成注册。"
+      },
+      requirements: {
+        en: "Credit card required to unlock pay-as-you-go credit additions.",
+        zh: "解除积分配额上限并开启按需增购功能需要绑定信用卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Core membership offers starter credits for first-time signups.",
+        zh: "订阅 Core 会员首月会赠送体验积分奖励。"
+      }
+    },
+    extraInfo: {
+      en: "Features integrated deployment directly to Replit sandboxes. Heavy hosting activity consumes credits from the same pool.",
+      zh: "最大优势是构建完成直接一键云端上线。但应用托管、数据库和 AI Agent 会共享相同的月度积分池。"
+    }
+  },
+  {
+    id: "tabnine",
+    name: "Tabnine",
+    category: "extension",
+    isOpenSource: false,
+    status: "active",
+    website: "https://www.tabnine.com",
+    github: "",
+    installCmd: "VS Code Marketplace -> Search: 'Tabnine'",
+    desc: {
+      en: "One of the earliest AI coding assistants, focused on strict data privacy, enterprise air-gapped deployments, and custom LLM connections.",
+      zh: "AI 编程助手领域的先驱之一。专注于高度的代码数据隐私保护、企业私有专网部署（Air-gapped）以及支持自带模型连接。"
+    },
+    freeTier: {
+      models: {
+        en: "Tabnine Basic (local completions)",
+        zh: "Tabnine 基础版 (本地运行模型)"
+      },
+      limits: {
+        en: "Basic Plan: Free forever. Short inline autocompletes only. No chat assistant.",
+        zh: "基础版：永久免费。仅提供基础的代码单行自动补全，不包含 Chat 侧边栏对话。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$15/mo (Pro) | $39/mo (Dev) | $59/mo (Agentic)",
+        zh: "$15/月 (Pro) | $39/月 (Dev) | $59/月 (Agentic 代理版)"
+      },
+      models: {
+        en: "Tabnine-Protected, Claude 3.5 Sonnet, GPT-4o, Custom BYO-LLM",
+        zh: "Tabnine 自研受保护模型, Claude 3.5 Sonnet, GPT-4o, 自定义大模型"
+      },
+      limits: {
+        en: "Pro/Dev: Unlimited chat & completions. Agentic: Adds autonomous multi-step code refactoring agents.",
+        zh: "Pro/Dev：无限次补全和对话。Agentic版：新增能自主执行多步骤重构任务的 AI 智能体。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Create an account on tabnine.com or register via IDE plugin.",
+        zh: "在 tabnine.com 注册账号或直接在 IDE 插件中进行登录。"
+      },
+      requirements: {
+        en: "None for Basic. Email and payment card for Pro/Enterprise.",
+        zh: "使用基础版无要求。订阅 Pro 以上需提供邮箱和绑定支付卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Offers a 90-day free Pro trial for verified individual developers.",
+        zh: "面向个人开发者提供最长达 90 天的免费 Pro 版试用优惠。"
+      }
+    },
+    extraInfo: {
+      en: "Guarantees zero IP contamination as Tabnine's proprietary models are trained exclusively on permissive open-source code.",
+      zh: "承诺 100% 无知识产权污染，其自研模型仅采用开源受许可代码训练。"
+    }
+  },
+  {
+    id: "pearai",
+    name: "PearAI",
+    category: "ide",
+    isOpenSource: true,
+    status: "active",
+    website: "https://trypear.dev/",
+    github: "https://github.com/trypear/pearai-app",
+    installCmd: "",
+    desc: {
+      en: "An open-source AI-first code editor fork of VS Code backed by Y Combinator, supporting BYOK or a single unified credit subscription.",
+      zh: "由 Y Combinator 孵化支持的开源 AI 原生代码编辑器（基于 VS Code 分支）。支持自带 Key (BYOK) 或通过统一订阅使用。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude 3.5 Haiku (unlimited), BYOK",
+        zh: "Claude 3.5 Haiku (无限制), BYOK (自带 Key)"
+      },
+      limits: {
+        en: "Free Open-Source: Unlimited local usage. Cloud models are billed directly by your own API key providers.",
+        zh: "开源免费版：本地运行无门槛。使用云端大模型由您自行绑定的 API Key 提供商计费。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$15/mo (PearAI Server Subscription)",
+        zh: "$15/月 (PearAI 托管服务器订阅)"
+      },
+      models: {
+        en: "Claude 3.5 Sonnet, GPT-4o, o1-mini, Gemini 1.5 Pro",
+        zh: "Claude 3.5 Sonnet, GPT-4o, o1-mini, Gemini 1.5 Pro"
+      },
+      limits: {
+        en: "Managed Subscription: Credit-based. Runs premium models without separate accounts. Top-up credits do not expire.",
+        zh: "托管订阅：基于积分扣减。免除配置多平台 Key 的烦恼。剩余充值积分永久有效、不重置。"
+      }
+    },
+    registration: {
+      process: {
+        en: "No account required for BYOK. Sign up on trypear.dev for server subscription.",
+        zh: "使用 BYOK 模式无需注册。订阅托管服务器服务需要在 trypear.dev 注册账号。"
+      },
+      requirements: {
+        en: "API keys for BYOK mode. Email and credit card for server subscription.",
+        zh: "BYOK 模式需自行准备 Key。服务器订阅需邮箱和信用卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Open-source editor is permanently free to use.",
+        zh: "编辑器内核完全开源，永久免费供开发者本地使用。"
+      }
+    },
+    extraInfo: {
+      en: "Emphasizes strict zero-data retention policies. Codebase indexing is processed completely locally.",
+      zh: "着重宣传零数据保留隐私保护政策，所有的项目代码库索引生成均在本地端完成。"
+    }
+  },
+  {
+    id: "openhands",
+    name: "OpenHands",
+    category: "cli",
+    isOpenSource: true,
+    status: "active",
+    website: "https://openhands.dev/",
+    github: "https://github.com/All-Hands-AI/OpenHands",
+    installCmd: "docker run -it -v /var/run/docker.sock:/var/run/docker.sock -p 3000:3000 ghcr.io/all-hands-ai/openhands",
+    desc: {
+      en: "An open-source autonomous agentic platform (formerly OpenDevin) capable of performing multi-step engineering tasks in sandbox Docker containers.",
+      zh: "开源的自主 AI 智能体开发平台（前身为 OpenDevin）。可以在沙盒化的 Docker 容器中自主执行多步骤的代码工程与维护任务。"
+    },
+    freeTier: {
+      models: {
+        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Qwen)",
+        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Qwen)"
+      },
+      limits: {
+        en: "100% free open-source software. Billed directly by your connected LLM API key providers.",
+        zh: "开源程序完全免费。模型消耗费用完全取决于您绑定的第三方 API Key 服务商。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "None (Free Software) | Custom (Enterprise)",
+        zh: "无 (免费软件) | 定制价格 (企业版)"
+      },
+      models: {
+        en: "Any API-compatible model",
+        zh: "任何兼容 API 的模型"
+      },
+      limits: {
+        en: "Enterprise version adds Kubernetes cluster deployment, centralized RBAC access control, and dedicated support.",
+        zh: "企业版增加了 Kubernetes 容器集群部署、集中化的 RBAC 权限控制及专属技术支持。"
+      }
+    },
+    registration: {
+      process: {
+        en: "No registration required. Run locally via Docker command.",
+        zh: "无需注册。直接在本地运行 Docker 启动指令即可。"
+      },
+      requirements: {
+        en: "Local Docker environment and LLM API keys.",
+        zh: "本地电脑需安装 Docker 环境并配置模型 API Key。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "MIT licensed, permanently free software.",
+        zh: "基于 MIT 协议开源，对个人用户永久免费。"
+      }
+    },
+    extraInfo: {
+      en: "Executes terminal commands and edits files within a secure container, ensuring no dangerous scripts touch your main host.",
+      zh: "在安全的容器沙盒中运行终端命令和编辑文件，有效隔绝危险的 AI 脚本污染和损坏本地主机系统。"
+    }
   }
 ];
 
@@ -725,7 +1177,7 @@ const translations = {
     tabExtension: "VS Code Extensions",
     filterFree: "Has Free Tier",
     filterOs: "Open Source",
-    btnDetails: "View Details",
+    btnDetails: "Details",
     btnWebsite: "Website",
     btnCompare: "Compare Selected",
     btnClear: "Clear All",
@@ -745,15 +1197,15 @@ const translations = {
       extension: "VS Code Extension"
     },
     // Card Specifics
-    cardFreeTitle: "Free Tier",
-    cardPaidTitle: "Paid Tier",
+    cardFreeTitle: "Free Tier Available Models",
+    cardPaidTitle: "Paid Tier Supported Models",
     cardFreeModels: "Free Models",
     cardPaidModels: "Paid Models",
-    cardPrice: "Starting at",
+    cardPrice: "Price",
     cardNoFree: "Paid Only",
     cardBYOK: "BYOK (Bring Your Own Key)",
     cardFreeSoftware: "Free Software",
-    cardDiscontinued: "Discontinued",
+    cardDiscontinued: "Discontinued / Enterprise Only",
     // Suggestions headings
     suggestPopular: "Popular Searches",
     suggestTools: "Tools & Platforms",
@@ -823,15 +1275,15 @@ const translations = {
       extension: "VS Code 插件"
     },
     // Card Specifics
-    cardFreeTitle: "免费版 / 免费层",
-    cardPaidTitle: "付费版 / 订阅层",
+    cardFreeTitle: "免费可用具体模型",
+    cardPaidTitle: "付费支持具体模型",
     cardFreeModels: "免费可用模型",
     cardPaidModels: "付费可用模型",
-    cardPrice: "起步价",
+    cardPrice: "费用",
     cardNoFree: "仅限付费",
     cardBYOK: "自带 Key (BYOK)",
     cardFreeSoftware: "完全免费开源",
-    cardDiscontinued: "服务已终止",
+    cardDiscontinued: "已停止个人服务 / 仅限企业级",
     // Suggestions headings
     suggestPopular: "热搜词推荐",
     suggestTools: "收录工具及平台",
@@ -980,8 +1432,9 @@ function renderModelChips(modelsStr, isPaid) {
   }
 
   // Check for BYOK models
-  if (modelsStr.includes("BYOK") || modelsStr.includes("自带 Key")) {
-    return `<span class="model-tag">${t.cardBYOK}</span>`;
+  if (modelsStr.startsWith("BYOK") || modelsStr.startsWith("自带 Key")) {
+    const innerPart = modelsStr.substring(modelsStr.indexOf("("));
+    return `<span class="model-tag">${t.cardBYOK}</span>` + (innerPart ? ` <span class="model-tag empty-tag" style="background:rgba(255,255,255,0.02)">${innerPart}</span>` : "");
   }
   
   // Split models by comma, clean and render
@@ -998,6 +1451,9 @@ function renderTools() {
   const t = translations[currentLang];
   toolsGrid.innerHTML = "";
   
+  // Dynamically update total tracked stats based on the data length
+  document.querySelector("#stat-total-tools .stat-number").textContent = toolsData.length;
+
   const filteredTools = toolsData.filter(tool => {
     // Tab Category Filter
     if (currentTab !== "all" && tool.category !== currentTab) {
@@ -1050,7 +1506,6 @@ function renderTools() {
     const card = document.createElement("div");
     card.className = `tool-card ${tool.status === 'inactive' ? 'shut-down' : ''}`;
     
-    const descText = tool.desc[currentLang];
     const categoryLabel = t.categoryLabels[tool.category];
     const statusLabel = tool.status === 'active' ? t.activeStatus : t.inactiveStatus;
 
@@ -1369,7 +1824,15 @@ const suggestionsData = {
     { value: "Cline", label: "Cline", type: "tool", icon: "layers" },
     { value: "Continue", label: "Continue", type: "tool", icon: "layers" },
     { value: "GitHub Copilot", label: "GitHub Copilot", type: "tool", icon: "layers" },
-    { value: "Roo Code", label: "Roo Code", type: "tool", icon: "layers" }
+    { value: "Roo Code", label: "Roo Code", type: "tool", icon: "layers" },
+    { value: "Sourcegraph Cody", label: "Sourcegraph Cody", type: "tool", icon: "layers" },
+    { value: "Supermaven", label: "Supermaven", type: "tool", icon: "layers" },
+    { value: "Trae", label: "Trae (ByteDance Trae)", type: "tool", icon: "layout" },
+    { value: "Tongyi Lingma", label: "Tongyi Lingma (通义灵码)", type: "tool", icon: "layers" },
+    { value: "Replit Agent", label: "Replit Agent", type: "tool", icon: "layout" },
+    { value: "Tabnine", label: "Tabnine", type: "tool", icon: "layers" },
+    { value: "PearAI", label: "PearAI", type: "tool", icon: "layout" },
+    { value: "OpenHands", label: "OpenHands", type: "tool", icon: "terminal" }
   ],
   models: [
     { value: "Claude 3.5 Sonnet", label: "Claude 3.5 Sonnet", type: "model", icon: "cpu" },
@@ -1377,9 +1840,12 @@ const suggestionsData = {
     { value: "Claude Opus", label: "Claude Opus", type: "model", icon: "cpu" },
     { value: "GPT-4o", label: "GPT-4o", type: "model", icon: "cpu" },
     { value: "GPT-5", label: "GPT-5", type: "model", icon: "cpu" },
-    { value: "DeepSeek", label: "DeepSeek", type: "model", icon: "cpu" },
-    { value: "Gemini", label: "Gemini", type: "model", icon: "cpu" },
-    { value: "Ollama", label: "Ollama", type: "model", icon: "cpu" }
+    { value: "DeepSeek", label: "DeepSeek (V3/R1)", type: "model", icon: "cpu" },
+    { value: "Gemini", label: "Gemini 1.5 Pro", type: "model", icon: "cpu" },
+    { value: "Ollama", label: "Ollama (Local LLMs)", type: "model", icon: "cpu" },
+    { value: "SWE-1.5", label: "SWE-1.5 (Windsurf)", type: "model", icon: "cpu" },
+    { value: "Doubao-Code", label: "Doubao-Code (Trae)", type: "model", icon: "cpu" },
+    { value: "Qwen-2.5-Coder", label: "Qwen-2.5-Coder", type: "model", icon: "cpu" }
   ],
   filters: [
     { value: "Open Source", label_en: "Open Source", label_zh: "开源项目", type: "filter", icon: "github", action: "os" },
