@@ -281,18 +281,125 @@ main {
   accent-color: var(--primary-cyan);
 }
 
+/* Top Navigation Bar */
+.top-nav {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  z-index: 100;
+}
+.lang-btn {
+  background: rgba(16, 20, 39, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--panel-border);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border-color: var(--panel-border-hover);
+  transform: translateY(-1px);
+}
+.lang-btn svg {
+  transition: transform var(--transition-normal);
+}
+.lang-btn:hover svg {
+  transform: rotate(20deg);
+}
+
+/* Search Suggestions Autocomplete Dropdown */
+.search-suggestions-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: rgba(11, 13, 27, 0.95);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--border-radius-sm);
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg), 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: none;
+  padding: 8px 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.search-suggestions-dropdown.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.suggestion-group-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 16px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  margin-bottom: 4px;
+}
+.suggestion-item {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: var(--transition-fast);
+}
+.suggestion-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+.suggestion-item svg {
+  color: var(--primary-cyan);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.suggestion-badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+}
+
 /* Tool Cards Grid */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 30px;
+  gap: 32px;
+  padding-bottom: 40px;
 }
 
 .tool-card {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
   border-radius: var(--border-radius-md);
-  padding: 28px;
+  padding: 24px;
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-md);
   transition: var(--transition-normal);
@@ -303,9 +410,9 @@ main {
 }
 
 .tool-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--panel-border-hover);
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-lg), 0 10px 30px rgba(6, 182, 212, 0.08);
 }
 
 /* Border Gradient Hover Effect */
@@ -317,8 +424,11 @@ main {
   right: 0;
   height: 4px;
   background: var(--primary-gradient);
-  opacity: 0.7;
+  opacity: 0.5;
   transition: var(--transition-normal);
+}
+.tool-card:hover::before {
+  opacity: 1;
 }
 .tool-card.shut-down::before {
   background: var(--color-danger);
@@ -328,93 +438,180 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .tool-logo-name {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .tool-logo {
-  width: 52px;
-  height: 52px;
-  border-radius: var(--border-radius-sm);
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
-  border: 1px solid var(--panel-border);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 20px;
   color: var(--text-primary);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-fast);
+}
+
+.tool-card:hover .tool-logo {
+  transform: scale(1.05);
+  border-color: var(--primary-cyan);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.2);
 }
 
 .tool-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1.2;
 }
 .tool-category {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-muted);
   font-weight: 500;
+  margin-top: 2px;
 }
 
 .status-badge {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
   padding: 4px 10px;
   border-radius: 9999px;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .status-active {
   color: var(--color-free);
   background: var(--color-free-bg);
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 .status-inactive {
   color: var(--color-danger);
   background: var(--color-danger-bg);
+  border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 .tool-desc {
   font-size: 14px;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   line-height: 1.6;
-  min-height: 45px;
+  min-height: 68px; /* Slightly taller to accommodate multi-line and prevent card jumps */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Info Columns inside Card */
+/* Structured Card Info Panels (De-cluttering layout) */
 .info-section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 20px;
+  gap: 12px;
   margin-bottom: 24px;
   flex-grow: 1;
 }
 
-.info-row {
+.card-tier-panel {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+  transition: var(--transition-fast);
 }
-.info-row-title {
-  font-size: 12px;
+.tool-card:hover .card-tier-panel {
+  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tier-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tier-panel-header svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.tier-panel-header svg.icon-free {
+  color: var(--color-free);
+}
+.tier-panel-header svg.icon-paid {
+  color: var(--color-paid);
+}
+.tier-panel-title {
+  font-size: 11px;
   text-transform: uppercase;
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
-.info-row-content {
+
+.tier-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tier-price-val {
   font-size: 14px;
+  font-weight: 700;
   color: var(--text-primary);
 }
-.info-row-content strong {
+
+/* Model Chips */
+.model-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+.model-tag {
+  background: rgba(6, 182, 212, 0.06);
+  border: 1px solid rgba(6, 182, 212, 0.12);
   color: var(--primary-cyan);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+.model-tag:hover {
+  background: rgba(6, 182, 212, 0.12);
+  border-color: rgba(6, 182, 212, 0.25);
+}
+.model-tag.paid {
+  background: rgba(168, 85, 247, 0.06);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+  color: var(--primary-purple);
+}
+.model-tag.paid:hover {
+  background: rgba(168, 85, 247, 0.12);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+.model-tag.empty-tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+}
+
+.quota-short-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
 /* Card Buttons */

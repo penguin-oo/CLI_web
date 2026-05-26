@@ -14,27 +14,35 @@
   <div class="glow-orb glow-orb-cyan"></div>
   <div class="glow-orb glow-orb-purple"></div>
 
+  <!-- Top Navigation (Language toggle) -->
+  <div class="top-nav">
+    <button id="lang-toggle-btn" class="lang-btn">
+      <i data-lucide="languages" style="width: 16px; height: 16px;"></i>
+      <span id="lang-btn-text">中文</span>
+    </button>
+  </div>
+
   <!-- Hero / Header Section -->
   <header>
-    <div class="badge-tag">
+    <div class="badge-tag" id="badge-tag">
       <i data-lucide="cpu" style="width: 14px; height: 14px;"></i>
       Developer Tools Directory 2026
     </div>
-    <h1>Find & Compare <span class="gradient-text">AI Coding Assistants</span></h1>
-    <p>Compare CLI agent tools, VS Code extensions, and AI-native IDEs. Analyze free models, billing structures, registration requirements, and trial deals.</p>
+    <h1 id="hero-title">Find & Compare <span class="gradient-text">AI Coding Assistants</span></h1>
+    <p id="hero-desc">Compare CLI agent tools, VS Code extensions, and AI-native IDEs. Analyze free models, billing structures, registration requirements, and trial deals.</p>
     
     <div class="hero-stats">
       <div class="stat-item" id="stat-total-tools">
         <span class="stat-number">12</span>
-        <span class="stat-label">Platforms Tracked</span>
+        <span class="stat-label" id="stat-label-tools">Platforms Tracked</span>
       </div>
       <div class="stat-item" id="stat-total-models">
         <span class="stat-number">50+</span>
-        <span class="stat-label">LLMs Supported</span>
+        <span class="stat-label" id="stat-label-models">LLMs Supported</span>
       </div>
       <div class="stat-item" id="stat-min-price">
         <span class="stat-number">$0</span>
-        <span class="stat-label">Entry Cost (BYOK)</span>
+        <span class="stat-label" id="stat-label-price">Entry Cost (BYOK)</span>
       </div>
     </div>
   </header>
@@ -45,7 +53,8 @@
     <section class="controls-panel" id="filter-controls-panel">
       <div class="search-box-wrapper">
         <i data-lucide="search"></i>
-        <input type="text" id="search-input" class="search-input" placeholder="Search by name, models (e.g. Claude, GPT-5, DeepSeek), or keywords...">
+        <input type="text" id="search-input" class="search-input" autocomplete="off" placeholder="Search by name, models (e.g. Claude, GPT-5, DeepSeek), or keywords...">
+        <div id="search-suggestions" class="search-suggestions-dropdown"></div>
       </div>
       
       <div class="filter-row">
