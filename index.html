@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive directory and comparison portal of AI-powered coding CLI platforms, IDE extensions, and AI-native IDEs (Cursor, Windsurf, Claude Code, Aider, Cline).">
+  <title>AI Coding CLI & IDE Finder - Compare Models, Pricing & Promotions</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Decorative background glow -->
+  <div class="glow-orb glow-orb-cyan"></div>
+  <div class="glow-orb glow-orb-purple"></div>
+
+  <!-- Hero / Header Section -->
+  <header>
+    <div class="badge-tag">
+      <i data-lucide="cpu" style="width: 14px; height: 14px;"></i>
+      Developer Tools Directory 2026
+    </div>
+    <h1>Find & Compare <span class="gradient-text">AI Coding Assistants</span></h1>
+    <p>Compare CLI agent tools, VS Code extensions, and AI-native IDEs. Analyze free models, billing structures, registration requirements, and trial deals.</p>
+    
+    <div class="hero-stats">
+      <div class="stat-item" id="stat-total-tools">
+        <span class="stat-number">12</span>
+        <span class="stat-label">Platforms Tracked</span>
+      </div>
+      <div class="stat-item" id="stat-total-models">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">LLMs Supported</span>
+      </div>
+      <div class="stat-item" id="stat-min-price">
+        <span class="stat-number">$0</span>
+        <span class="stat-label">Entry Cost (BYOK)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- Search & Filter Controls -->
+    <section class="controls-panel" id="filter-controls-panel">
+      <div class="search-box-wrapper">
+        <i data-lucide="search"></i>
+        <input type="text" id="search-input" class="search-input" placeholder="Search by name, models (e.g. Claude, GPT-5, DeepSeek), or keywords...">
+      </div>
+      
+      <div class="filter-row">
+        <!-- Category Tabs -->
+        <div class="tabs-wrapper" id="category-tabs">
+          <button class="tab-btn active" data-tab="all" id="tab-all">All Tools</button>
+          <button class="tab-btn" data-tab="ide" id="tab-ide">AI-First IDEs</button>
+          <button class="tab-btn" data-tab="cli" id="tab-cli">CLI Agents</button>
+          <button class="tab-btn" data-tab="extension" id="tab-extension">VS Code Extensions</button>
+        </div>
+        
+        <!-- Toggle Options -->
+        <div class="quick-filters" id="quick-filters-row">
+          <label class="checkbox-filter" id="filter-free-label">
+            <input type="checkbox" id="filter-free">
+            <span>Has Free Tier</span>
+          </label>
+          <label class="checkbox-filter" id="filter-os-label">
+            <input type="checkbox" id="filter-os">
+            <span>Open Source</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-grid" id="tools-grid">
+      <!-- Tool cards will be dynamically injected here via app.js -->
+    </section>
+  </main>
+
+  <!-- Sticky Comparison Bar (Bottom Drawer) -->
+  <section class="compare-bar" id="compare-bar">
+    <div class="compare-bar-content">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span style="font-weight: 700; font-size: 15px; color: var(--text-primary);">Comparing:</span>
+        <div class="compare-items-list" id="compare-badges">
+          <!-- Dynamic comparison items go here -->
+        </div>
+      </div>
+      <div class="compare-actions">
+        <button class="btn" id="clear-compare-btn">Clear All</button>
+        <button class="btn btn-primary" id="compare-btn">
+          Compare Selected <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Screen Comparison Table Overlay -->
+  <div class="compare-overlay" id="compare-overlay">
+    <div class="compare-modal">
+      <button class="close-btn" id="compare-close-btn" title="Close comparison">
+        <i data-lucide="x"></i>
+      </button>
+      <h2 class="compare-modal-title">Side-by-Side Comparison</h2>
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <tbody id="comparison-table-body">
+            <!-- Dynamic comparison rows go here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal-content">
+      <button class="close-btn" id="detail-close-btn" title="Close details">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="detail-modal-body">
+        <!-- Dynamic detail specifications go here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 AI Coding CLI & IDE Finder. Built for developers. Values and availability verified as of May 2026.</p>
+    <p style="margin-top: 8px; font-size: 12px; color: var(--text-muted);">
+      Prices and APIs are subject to change. For official updates, please visit the respective tool homepages.
+    </p>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
