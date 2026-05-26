@@ -4,18 +4,19 @@ const toolsData = [
     name: "Cursor",
     category: "ide",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://cursor.com",
     github: "",
     installCmd: "",
     desc: {
-      en: "A highly popular AI-first code editor fork of VS Code. Built for fast agentic workflows with its 'Auto' mode and deep codebase index.",
+      en: "A highly popular AI-first code editor fork of VS Code. Uses a credit-based system with 'Auto' mode for unlimited cost-efficient model routing.",
       zh: "非常受欢迎的基于 VS Code 分支的 AI 原生编辑器。凭借其“Auto”自动代理模式和深度的代码库索引，专为高效的 Agent 开发流程设计。"
     },
     freeTier: {
       models: {
-        en: "Cursor-small, Claude 3.5 Sonnet (limited), GPT-4o (limited)",
-        zh: "Cursor-small, Claude 3.5 Sonnet (限额), GPT-4o (限额)"
+        en: "cursor-small, limited premium model access (slow speed)",
+        zh: "cursor-small, 限量使用高级模型（慢速）"
       },
       limits: {
         en: "Hobby Plan: Limited daily/monthly Agent requests, standard Tab autocompletes.",
@@ -28,8 +29,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $60/月 (Pro+) | $200/月 (Ultra)"
       },
       models: {
-        en: "Claude 3.5/3.7 Sonnet, GPT-4o, o1, o1-pro, o3-mini, GPT-5",
-        zh: "Claude 3.5/3.7 Sonnet, GPT-4o, o1, o1-pro, o3-mini, GPT-5"
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, DeepSeek V4 Pro, Composer 2.5",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-4.1, Gemini 2.5 Pro, DeepSeek V4 Pro, Composer 2.5"
       },
       limits: {
         en: "Pro: Unlimited autocomplete & Auto mode, plus a $20/mo credit pool for premium models.",
@@ -62,6 +63,7 @@ const toolsData = [
     name: "Windsurf",
     category: "ide",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://codeium.com/windsurf",
     github: "",
@@ -72,8 +74,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Cascade (Base), Claude 3.5 Sonnet, GPT-4o",
-        zh: "Cascade (基础版), Claude 3.5 Sonnet, GPT-4o"
+        en: "SWE-1.6 (limited/slow), basic model access",
+        zh: "SWE-1.6 (限量/慢速), 基础模型访问"
       },
       limits: {
         en: "Free Plan: Limited daily usage quota, unlimited Tab completions.",
@@ -86,8 +88,8 @@ const toolsData = [
         zh: "$20/月 (Pro) | $200/月 (Max)"
       },
       models: {
-        en: "SWE-1.5, Claude 3.5/3.7 Sonnet, GPT-4o, o1, Gemini 1.5 Pro",
-        zh: "SWE-1.5, Claude 3.5/3.7 Sonnet, GPT-4o, o1, Gemini 1.5 Pro"
+        en: "SWE-1.6, Claude Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V4",
+        zh: "SWE-1.6, Claude Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V4"
       },
       limits: {
         en: "Pro: Standard daily/weekly usage quota, unlimited Tab completions, unlimited inline Command edits.",
@@ -117,9 +119,10 @@ const toolsData = [
   },
   {
     id: "kiro",
-    name: "Kiro (AWS Kiro)",
+    name: "Kiro (AWS)",
     category: "ide",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://kiro.dev",
     github: "https://github.com/aws/kiro",
@@ -130,8 +133,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude 3.5 Sonnet, Llama 3 70B, Q Developer",
-        zh: "Claude 3.5 Sonnet, Llama 3 70B, Q Developer"
+        en: "Claude Sonnet 4.5, Qwen3 Coder Next, DeepSeek v3.2, MiniMax M2.1",
+        zh: "Claude Sonnet 4.5, Qwen3 Coder Next, DeepSeek v3.2, MiniMax M2.1"
       },
       limits: {
         en: "Free Plan: 50 credits/month (perpetual, reset monthly).",
@@ -144,8 +147,8 @@ const toolsData = [
         zh: "$20/月 (Pro: 1000点数) | $40/月 (Pro+: 2000点数) | $200/月 (Power: 10000点数)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku, Titan",
-        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku, Titan"
+        en: "Claude Opus 4.7, Claude Sonnet 4.5, GLM-5, Amazon Nova, MiniMax M2.5",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.5, GLM-5, Amazon Nova, MiniMax M2.5"
       },
       limits: {
         en: "Credits consumed fractionally based on task complexity. Overage option: $0.04 per additional credit.",
@@ -178,6 +181,7 @@ const toolsData = [
     name: "Claude Code",
     category: "cli",
     isOpenSource: false,
+    hasFreeTier: false,
     status: "active",
     website: "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code",
     github: "",
@@ -202,8 +206,8 @@ const toolsData = [
         zh: "$20/月 (Pro 订阅) 或 按需付费 API"
       },
       models: {
-        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku",
-        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude 3.5 Haiku"
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, Claude Haiku 4.5",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, Claude Haiku 4.5"
       },
       limits: {
         en: "Pro plan: Subject to standard Web/App token quotas (resetting every 5 hours). API plan: Billed per token.",
@@ -233,9 +237,10 @@ const toolsData = [
   },
   {
     id: "openai-codex",
-    name: "OpenAI Codex",
+    name: "OpenAI Codex CLI",
     category: "cli",
-    isOpenSource: false,
+    isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://github.com/openai/codex",
     github: "https://github.com/openai/codex",
@@ -246,8 +251,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "GPT-4o-mini (via ChatGPT free limits)",
-        zh: "GPT-4o-mini (使用 ChatGPT 免费额度)"
+        en: "GPT-5.5 Instant (via ChatGPT free limits)",
+        zh: "GPT-5.5 Instant (使用 ChatGPT 免费额度)"
       },
       limits: {
         en: "Strict request limits under standard ChatGPT free tier.",
@@ -260,8 +265,8 @@ const toolsData = [
         zh: "包含在 ChatGPT Plus ($20/月) / Pro ($200/月) 或通过 API Key 付费"
       },
       models: {
-        en: "GPT-4o, o1, o3-mini, GPT-4",
-        zh: "GPT-4o, o1, o3-mini, GPT-4"
+        en: "GPT-5.5, GPT-5.5 Pro, GPT-5.4, GPT-4.1",
+        zh: "GPT-5.5, GPT-5.5 Pro, GPT-5.4, GPT-4.1"
       },
       limits: {
         en: "Token-based credit system. API key mode allows pay-as-you-go billing directly per million tokens.",
@@ -294,6 +299,7 @@ const toolsData = [
     name: "OpenCode",
     category: "cli",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://opencode.ai",
     github: "https://github.com/opencode/opencode",
@@ -304,8 +310,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
-        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
+        en: "BYOK (Claude Sonnet 4.6, GPT-5.5, DeepSeek V4 Pro)",
+        zh: "BYOK (Claude Sonnet 4.6, GPT-5.5, DeepSeek V4 Pro)"
       },
       limits: {
         en: "100% free to run. Limits are determined by your own API keys/local computer capacity.",
@@ -318,8 +324,8 @@ const toolsData = [
         zh: "$10/月 (OpenCode Go) | 按需付费 (OpenCode Zen)"
       },
       models: {
-        en: "GLM-4, Kimi-Chat, DeepSeek-R1, Claude 3.5 Sonnet, GPT-4o",
-        zh: "GLM-4, Kimi-Chat, DeepSeek-R1, Claude 3.5 Sonnet, GPT-4o"
+        en: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)",
+        zh: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)"
       },
       limits: {
         en: "OpenCode Go: Usage-based pricing capping at $12 per 5 hours / $60 per month. Zen: Pay-as-you-go at cost.",
@@ -352,6 +358,7 @@ const toolsData = [
     name: "AtomCode",
     category: "cli",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://atomgit.com/atomcode/atomcode",
     github: "https://atomgit.com/atomcode/atomcode",
@@ -362,8 +369,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Ollama local, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
-        zh: "BYOK (本地 Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
+        en: "BYOK (Ollama local, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)",
+        zh: "BYOK (本地 Ollama, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)"
       },
       limits: {
         en: "100% free open-source CLI. Billed directly by your selected LLM API providers.",
@@ -376,8 +383,8 @@ const toolsData = [
         zh: "无 (免费软件)"
       },
       models: {
-        en: "BYOK (Ollama: DeepSeek-R1, Qwen-2.5; Cloud: Claude 3.5 Sonnet, GPT-4o)",
-        zh: "BYOK (本地: DeepSeek-R1, Qwen-2.5; 云端: Claude 3.5 Sonnet, GPT-4o)"
+        en: "BYOK (Ollama: DeepSeek V4, Qwen 3, Llama 4; Cloud: Claude Sonnet 4.6, GPT-5.5)",
+        zh: "BYOK (本地: DeepSeek V4, Qwen 3, Llama 4; 云端: Claude Sonnet 4.6, GPT-5.5)"
       },
       limits: {
         en: "Self-hosted / BYOK. Billed by third-party model providers.",
@@ -410,6 +417,7 @@ const toolsData = [
     name: "Aider",
     category: "cli",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://aider.chat",
     github: "https://github.com/paul-gauthier/aider",
@@ -420,8 +428,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Ollama)",
-        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Ollama)"
+        en: "BYOK (Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4 Pro, Ollama)",
+        zh: "BYOK (Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4 Pro, Ollama)"
       },
       limits: {
         en: "100% free tool. No software fees. Run offline with local models for zero cost.",
@@ -434,8 +442,8 @@ const toolsData = [
         zh: "无 (免费软件)"
       },
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, DeepSeek-R1, GPT-4o, Gemini 1.5 Pro)",
-        zh: "BYOK (Claude 3.5 Sonnet, DeepSeek-R1, GPT-4o, Gemini 1.5 Pro)"
+        en: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)",
+        zh: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)"
       },
       limits: {
         en: "Billed directly by API providers based on your key usage.",
@@ -468,6 +476,7 @@ const toolsData = [
     name: "Cline",
     category: "extension",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://cline.bot",
     github: "https://github.com/cline/cline",
@@ -478,8 +487,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek-R1)",
-        zh: "BYOK (Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek-R1)"
+        en: "BYOK (Claude Sonnet 4.6, GPT-5.5, Gemini 3.1 Pro, DeepSeek V4)",
+        zh: "BYOK (Claude Sonnet 4.6, GPT-5.5, Gemini 3.1 Pro, DeepSeek V4)"
       },
       limits: {
         en: "Free to use the VS Code extension. Billed by your API provider.",
@@ -492,8 +501,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $20/月 (团队)"
       },
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek-R1, GPT-4o)",
-        zh: "BYOK (Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek-R1, GPT-4o)"
+        en: "BYOK (Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4, Qwen 3)",
+        zh: "BYOK (Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4, Qwen 3)"
       },
       limits: {
         en: "Teams plan includes shared proxies, administrative controls, centralized billing, and JetBrains IDE support.",
@@ -526,6 +535,7 @@ const toolsData = [
     name: "Continue",
     category: "extension",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://continue.dev",
     github: "https://github.com/continuedev/continue",
@@ -536,8 +546,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)",
-        zh: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1)"
+        en: "BYOK (Ollama, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)",
+        zh: "BYOK (Ollama, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)"
       },
       limits: {
         en: "Extension is 100% free and open-source. Billed by model providers.",
@@ -550,8 +560,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $20/用户/月 (团队/企业版)"
       },
       models: {
-        en: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-V3/R1)",
-        zh: "BYOK (Ollama, Claude 3.5 Sonnet, GPT-4o, DeepSeek-V3/R1)"
+        en: "BYOK (Ollama, Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, DeepSeek V4, Codestral)",
+        zh: "BYOK (Ollama, Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro, DeepSeek V4, Codestral)"
       },
       limits: {
         en: "Enterprise plan adds shared private context agents, custom security guardrails, and centralized API token management.",
@@ -584,6 +594,7 @@ const toolsData = [
     name: "GitHub Copilot",
     category: "extension",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://github.com/features/copilot",
     github: "",
@@ -594,8 +605,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro",
-        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro"
+        en: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)",
+        zh: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)"
       },
       limits: {
         en: "Free for verified students, educators, and maintainers of popular open-source projects.",
@@ -608,8 +619,8 @@ const toolsData = [
         zh: "$10/月 (Pro) | $39/月 (Pro+) | $19/用户/月 (Business) | $39/用户/月 (Enterprise)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, o1-mini, o1",
-        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, o1-mini, o1"
+        en: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-5.4, Gemini 2.5 Pro",
+        zh: "Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.5, GPT-5.4, Gemini 2.5 Pro"
       },
       limits: {
         en: "Subscribers receive 'GitHub AI Credits' for agent/chat commands. Autocomplete and 'Next Edit' suggestions do not consume credits.",
@@ -642,6 +653,7 @@ const toolsData = [
     name: "Roo Code",
     category: "extension",
     isOpenSource: true,
+    hasFreeTier: false,
     status: "inactive",
     website: "https://roocode.com",
     github: "https://github.com/RooCline/Roo-Code",
@@ -700,6 +712,7 @@ const toolsData = [
     name: "Sourcegraph Cody",
     category: "extension",
     isOpenSource: false,
+    hasFreeTier: false,
     status: "inactive",
     website: "https://sourcegraph.com/cody",
     github: "https://github.com/sourcegraph/cody",
@@ -724,8 +737,8 @@ const toolsData = [
         zh: "仅限企业级客户 (约 $59/用户/月)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro",
-        zh: "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro"
+        en: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)",
+        zh: "Claude Sonnet 4.6, GPT-4.1 (50 premium requests/mo)"
       },
       limits: {
         en: "Requires custom corporate contract. Integrates with enterprise codebases and supports custom models.",
@@ -758,6 +771,7 @@ const toolsData = [
     name: "Supermaven",
     category: "extension",
     isOpenSource: false,
+    hasFreeTier: false,
     status: "inactive",
     website: "https://supermaven.com",
     github: "",
@@ -816,6 +830,7 @@ const toolsData = [
     name: "Trae (ByteDance Trae)",
     category: "ide",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://www.trae.ai/",
     github: "",
@@ -826,8 +841,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Doubao-Code",
-        zh: "Claude 3.5 Sonnet, GPT-4o, 豆包大模型-代码版"
+        en: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, Doubao 1.5 Pro",
+        zh: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, 豆包 1.5 Pro"
       },
       limits: {
         en: "Free Plan: Standard daily chat and autocomplete quotas (subject to fair use).",
@@ -836,12 +851,12 @@ const toolsData = [
     },
     paidTier: {
       price: {
-        en: "Free / $19.99/mo (Pro)",
-        zh: "免费 / 约 $19.99/月 (Pro 版)"
+        en: "$3/mo (Lite) | $10/mo (Pro) | $30/mo (Pro+) | $100/mo (Ultra)",
+        zh: "$3/月 (Lite) | $10/月 (Pro) | $30/月 (Pro+) | $100/月 (Ultra)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, Doubao-Code-Pro",
-        zh: "Claude 3.5 Sonnet, GPT-4o, 豆包代码专业版"
+        en: "Claude Sonnet 4.6, GPT-4o, GPT-4.1, Gemini 2.5 Pro/Flash, DeepSeek V3/R1, Doubao 1.5 Pro-Pro",
+        zh: "所有免费模型 + Qwen3-Coder，更高配额，完整 SOLO 和 Builder 模式"
       },
       limits: {
         en: "Pro plan increases daily limits and offers higher priority access to advanced models.",
@@ -874,6 +889,7 @@ const toolsData = [
     name: "Tongyi Lingma (通义灵码)",
     category: "extension",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://tongyi.aliyun.com/lingma",
     github: "",
@@ -884,8 +900,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Qwen-2.5-Coder (Standard)",
-        zh: "通义千问 Qwen-2.5-Coder"
+        en: "Qwen-Coder-Qoder (custom RL-optimized model)",
+        zh: "Qwen-Coder-Qoder (自研强化学习优化模型)"
       },
       limits: {
         en: "Free Individual Edition: Unlimited basic code completions and general Q&A.",
@@ -898,8 +914,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $32/用户/月 (企业专属版)"
       },
       models: {
-        en: "Qwen-2.5-Coder-72B (Enterprise Custom)",
-        zh: "通义千问 Qwen-2.5-Coder-72B 企业定制版"
+        en: "Qwen3-Coder, Qwen-Coder-Qoder, multi-model (GLM, DeepSeek, Kimi, MiniMax)",
+        zh: "Qwen-Coder-Qoder (自研强化学习优化模型)-72B 企业定制版"
       },
       limits: {
         en: "Enterprise plan adds proprietary knowledge base retrieval, custom model fine-tuning, and dedicated inference pipelines.",
@@ -932,6 +948,7 @@ const toolsData = [
     name: "Replit Agent",
     category: "ide",
     isOpenSource: false,
+    hasFreeTier: true,
     status: "active",
     website: "https://replit.com",
     github: "",
@@ -942,8 +959,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Replit-Agent (Light / Limited)",
-        zh: "Replit-Agent 限制体验版"
+        en: "Replit internal models (limited daily credits)",
+        zh: "Replit 内部模型 (每日限量积分)"
       },
       limits: {
         en: "Starter (Free) plan offers highly limited daily Agent sessions and 1 active sandbox.",
@@ -956,8 +973,8 @@ const toolsData = [
         zh: "$20–$25/月 (Core) | $100/月 (Pro 版)"
       },
       models: {
-        en: "Replit-Agent-Pro, Claude 3.5 Sonnet, GPT-4o",
-        zh: "Replit-Agent-Pro, Claude 3.5 Sonnet, GPT-4o"
+        en: "Multi-model: Claude (Anthropic), Gemini (Google), GPT-4o (OpenAI)",
+        zh: "Multi-model: Claude (Anthropic), Gemini (Google), GPT-4o (OpenAI)"
       },
       limits: {
         en: "Core plan includes $20/mo credit pool. Billed dynamically per session based on task effort.",
@@ -990,6 +1007,7 @@ const toolsData = [
     name: "Tabnine",
     category: "extension",
     isOpenSource: false,
+    hasFreeTier: false,
     status: "active",
     website: "https://www.tabnine.com",
     github: "",
@@ -1000,8 +1018,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Tabnine Basic (local completions)",
-        zh: "Tabnine 基础版 (本地运行模型)"
+        en: "None (14-day free trial available)",
+        zh: "无免费版 (提供 14 天免费试用)"
       },
       limits: {
         en: "Basic Plan: Free forever. Short inline autocompletes only. No chat assistant.",
@@ -1010,12 +1028,12 @@ const toolsData = [
     },
     paidTier: {
       price: {
-        en: "$15/mo (Pro) | $39/mo (Dev) | $59/mo (Agentic)",
-        zh: "$15/月 (Pro) | $39/月 (Dev) | $59/月 (Agentic 代理版)"
+        en: "$39/user/mo (Code Assistant) | $59/user/mo (Agentic Platform)",
+        zh: "$39/用户/月 (代码助手) | $59/用户/月 (Agent 平台)"
       },
       models: {
-        en: "Tabnine-Protected, Claude 3.5 Sonnet, GPT-4o, Custom BYO-LLM",
-        zh: "Tabnine 自研受保护模型, Claude 3.5 Sonnet, GPT-4o, 自定义大模型"
+        en: "Tabnine Protected, Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.4, Gemini 3 Pro, Qwen3-Coder",
+        zh: "Tabnine 自研保护版, Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.4, Gemini 3 Pro, Qwen3-Coder"
       },
       limits: {
         en: "Pro/Dev: Unlimited chat & completions. Agentic: Adds autonomous multi-step code refactoring agents.",
@@ -1048,6 +1066,7 @@ const toolsData = [
     name: "PearAI",
     category: "ide",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://trypear.dev/",
     github: "https://github.com/trypear/pearai-app",
@@ -1058,8 +1077,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude 3.5 Haiku (unlimited), BYOK",
-        zh: "Claude 3.5 Haiku (无限制), BYOK (自带 Key)"
+        en: "BYOK + Claude Haiku 4.5 (limited free access)",
+        zh: "BYOK + Claude Haiku 4.5 (限量免费使用)"
       },
       limits: {
         en: "Free Open-Source: Unlimited local usage. Cloud models are billed directly by your own API key providers.",
@@ -1072,8 +1091,8 @@ const toolsData = [
         zh: "$15/月 (PearAI 托管服务器订阅)"
       },
       models: {
-        en: "Claude 3.5 Sonnet, GPT-4o, o1-mini, Gemini 1.5 Pro",
-        zh: "Claude 3.5 Sonnet, GPT-4o, o1-mini, Gemini 1.5 Pro"
+        en: "Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro (via PearAI Router)",
+        zh: "Claude Sonnet 4.6, GPT-5.5, Gemini 2.5 Pro (via PearAI Router)"
       },
       limits: {
         en: "Managed Subscription: Credit-based. Runs premium models without separate accounts. Top-up credits do not expire.",
@@ -1106,6 +1125,7 @@ const toolsData = [
     name: "OpenHands",
     category: "cli",
     isOpenSource: true,
+    hasFreeTier: true,
     status: "active",
     website: "https://openhands.dev/",
     github: "https://github.com/All-Hands-AI/OpenHands",
@@ -1116,8 +1136,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Qwen)",
-        zh: "BYOK (Claude 3.5 Sonnet, GPT-4o, DeepSeek-R1, Qwen)"
+        en: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro)",
+        zh: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro)"
       },
       limits: {
         en: "100% free open-source software. Billed directly by your connected LLM API key providers.",
@@ -1130,8 +1150,8 @@ const toolsData = [
         zh: "无 (免费软件) | 定制价格 (企业版)"
       },
       models: {
-        en: "Any API-compatible model",
-        zh: "任何兼容 API 的模型"
+        en: "Any API-compatible model. Recommended local: Qwen3.6-35B-A3B",
+        zh: "任何兼容 API 的模型。推荐本地模型：Qwen3.6-35B-A3B"
       },
       limits: {
         en: "Enterprise version adds Kubernetes cluster deployment, centralized RBAC access control, and dedicated support.",
@@ -1239,7 +1259,9 @@ const translations = {
     modalInstallNote: "Run the following command to install the CLI tool:",
     modalExtraTitle: "Architecture & Extra Notes",
     modalWebBtn: "Official Website",
-    modalSourceBtn: "Source Code"
+    modalSourceBtn: "Source Code",
+    footerText: "AI Coding Tools Portal &mdash; Comprehensive comparison of developer AI assistants.",
+    footerNote: "Data updated May 2026. Pricing and model availability may change."
   },
   zh: {
     heroTitle: '查找与对比 <span class="gradient-text">AI 编程助手</span>',
@@ -1317,7 +1339,9 @@ const translations = {
     modalInstallNote: "在终端中运行以下命令以安装 CLI 工具：",
     modalExtraTitle: "架构设计与额外说明",
     modalWebBtn: "访问官方网站",
-    modalSourceBtn: "查看开源源码"
+    modalSourceBtn: "查看开源源码",
+    footerText: "AI 编程工具门户 &mdash; 全面对比开发者 AI 编程助手。",
+    footerNote: "数据更新于 2026 年 5 月。价格和模型可用性可能随时变化。"
   }
 };
 
@@ -1828,24 +1852,24 @@ const suggestionsData = {
     { value: "Sourcegraph Cody", label: "Sourcegraph Cody", type: "tool", icon: "layers" },
     { value: "Supermaven", label: "Supermaven", type: "tool", icon: "layers" },
     { value: "Trae", label: "Trae (ByteDance Trae)", type: "tool", icon: "layout" },
-    { value: "Tongyi Lingma", label: "Tongyi Lingma (通义灵码)", type: "tool", icon: "layers" },
+    { value: "Qoder CN", label: "Qoder CN (通义灵码)", type: "tool", icon: "layers" },
     { value: "Replit Agent", label: "Replit Agent", type: "tool", icon: "layout" },
     { value: "Tabnine", label: "Tabnine", type: "tool", icon: "layers" },
     { value: "PearAI", label: "PearAI", type: "tool", icon: "layout" },
     { value: "OpenHands", label: "OpenHands", type: "tool", icon: "terminal" }
   ],
   models: [
-    { value: "Claude 3.5 Sonnet", label: "Claude 3.5 Sonnet", type: "model", icon: "cpu" },
-    { value: "Claude 3.7 Sonnet", label: "Claude 3.7 Sonnet", type: "model", icon: "cpu" },
-    { value: "Claude Opus", label: "Claude Opus", type: "model", icon: "cpu" },
+    { value: "Claude Sonnet 4.6", label: "Claude Sonnet 4.6", type: "model", icon: "cpu" },
+    { value: "Claude Opus 4.7", label: "Claude Opus 4.7", type: "model", icon: "cpu" },
+    { value: "Claude Haiku 4.5", label: "Claude Haiku 4.5", type: "model", icon: "cpu" },
     { value: "GPT-4o", label: "GPT-4o", type: "model", icon: "cpu" },
-    { value: "GPT-5", label: "GPT-5", type: "model", icon: "cpu" },
-    { value: "DeepSeek", label: "DeepSeek (V3/R1)", type: "model", icon: "cpu" },
-    { value: "Gemini", label: "Gemini 1.5 Pro", type: "model", icon: "cpu" },
+    { value: "GPT-5.5", label: "GPT-5.5", type: "model", icon: "cpu" },
+    { value: "DeepSeek", label: "DeepSeek V4", type: "model", icon: "cpu" },
+    { value: "Gemini", label: "Gemini 3.1 Pro", type: "model", icon: "cpu" },
     { value: "Ollama", label: "Ollama (Local LLMs)", type: "model", icon: "cpu" },
-    { value: "SWE-1.5", label: "SWE-1.5 (Windsurf)", type: "model", icon: "cpu" },
-    { value: "Doubao-Code", label: "Doubao-Code (Trae)", type: "model", icon: "cpu" },
-    { value: "Qwen-2.5-Coder", label: "Qwen-2.5-Coder", type: "model", icon: "cpu" }
+    { value: "SWE-1.6", label: "SWE-1.6 (Windsurf)", type: "model", icon: "cpu" },
+    { value: "Doubao", label: "Doubao 1.5 Pro (Trae)", type: "model", icon: "cpu" },
+    { value: "Qwen3-Coder", label: "Qwen3-Coder", type: "model", icon: "cpu" }
   ],
   filters: [
     { value: "Open Source", label_en: "Open Source", label_zh: "开源项目", type: "filter", icon: "github", action: "os" },
@@ -1860,7 +1884,7 @@ const suggestionsData = {
 const popularSearches = [
   { value: "Cursor", label: "Cursor", type: "tool", icon: "layout" },
   { value: "Claude Code", label: "Claude Code", type: "tool", icon: "terminal" },
-  { value: "Claude 3.5 Sonnet", label: "Claude 3.5 Sonnet", type: "model", icon: "cpu" },
+  { value: "Claude Sonnet 4.6", label: "Claude Sonnet 4.6", type: "model", icon: "cpu" },
   { value: "DeepSeek", label: "DeepSeek", type: "model", icon: "cpu" },
   { value: "Open Source", label_en: "Open Source", label_zh: "开源项目", type: "filter", icon: "github", action: "os" },
   { value: "Free Tier", label_en: "Free Tier Available", label_zh: "有免费额度", type: "filter", icon: "sparkles", action: "free" }
