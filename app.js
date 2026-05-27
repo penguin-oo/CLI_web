@@ -369,26 +369,26 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "BYOK (Ollama local, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)",
-        zh: "BYOK (本地 Ollama, Claude Sonnet 4.6, GPT-5.5, DeepSeek V4)"
+        en: "AtomGit CodingPlan (DeepSeek-V4-Flash, Qwen3.6-35B-A3B, GLM-5.1-Flash) or BYOK (Claude Sonnet 4.6, GPT-5.5, DeepSeek V4, etc.)",
+        zh: "AtomGit CodingPlan (免费提供：DeepSeek-V4-Flash, Qwen3.6-35B-A3B, GLM-5.1-Flash) 或 自带 Key (Claude Sonnet 4.6, GPT-5.5, DeepSeek V4 等)"
       },
       limits: {
-        en: "100% free open-source CLI. Billed directly by your selected LLM API providers.",
-        zh: "100% 免费的开源 CLI 工具。仅由您选择的第三方大模型 API 提供商直接计费。"
+        en: "Free Individual Tier: Unlimited completions, chat, and agent tasks using CodingPlan models (with a 5-hour rolling rate limit) after OAuth login with AtomGit.",
+        zh: "免费个人版：使用 AtomGit 账号 OAuth 登录后即可通过 CodingPlan 免费使用上述三个模型，支持无限制补全、对话和 Agent 任务（受 5 小时滚动窗口限频影响）。"
       }
     },
     paidTier: {
       price: {
-        en: "None (Free Software)",
-        zh: "无 (免费软件)"
+        en: "None (Free Software) | BYOK / Premium API keys",
+        zh: "无 (免费软件) | 自带 Key / 额外付费 API 接口"
       },
       models: {
-        en: "BYOK (Ollama: DeepSeek V4, Qwen 3, Llama 4; Cloud: Claude Sonnet 4.6, GPT-5.5)",
-        zh: "BYOK (本地: DeepSeek V4, Qwen 3, Llama 4; 云端: Claude Sonnet 4.6, GPT-5.5)"
+        en: "BYOK (Ollama local: DeepSeek V4 Pro, Qwen3-Coder, Llama 4; Cloud: Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro)",
+        zh: "自带 Key (本地: DeepSeek V4 Pro, Qwen3-Coder, Llama 4; 云端: Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro)"
       },
       limits: {
-        en: "Self-hosted / BYOK. Billed by third-party model providers.",
-        zh: "自托管/自带 Key 运行。由第三方模型服务商计费。"
+        en: "Self-hosted / BYOK. Billed by third-party model providers. No software usage fees.",
+        zh: "自托管/自带 Key 运行。由第三方模型服务商计费。软件本身不收取任何费用。"
       }
     },
     registration: {
@@ -442,8 +442,8 @@ const toolsData = [
         zh: "无 (免费软件)"
       },
       models: {
-        en: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)",
-        zh: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen 3)"
+        en: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen3-Coder)",
+        zh: "BYOK (Claude Opus 4.7, GPT-5.5, DeepSeek V4 Pro, Gemini 3.1 Pro, Qwen3-Coder)"
       },
       limits: {
         en: "Billed directly by API providers based on your key usage.",
@@ -841,8 +841,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, GPT-4o, Gemini 2.5 Pro/Flash, DeepSeek R1, DeepSeek V3, Doubao-Code, Grok, Kimi",
-        zh: "Claude 3.5 Sonnet, Claude 3.7 Sonnet, GPT-4o, Gemini 2.5 Pro/Flash, DeepSeek R1, DeepSeek V3, 豆包, Grok, Kimi"
+        en: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro/Flash, DeepSeek R1, DeepSeek V3, Doubao 1.5 Pro, Grok 4.3, Kimi K2.5",
+        zh: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro/Flash, DeepSeek R1, DeepSeek V3, 豆包 1.5 Pro, Grok 4.3, Kimi K2.5"
       },
       limits: {
         en: "Free Plan: Standard daily chat and autocomplete quotas (subject to fair use).",
@@ -900,8 +900,8 @@ const toolsData = [
     },
     freeTier: {
       models: {
-        en: "Qwen-Coder-Qoder (custom RL-optimized), Qwen3 series, DeepSeek-v3, DeepSeek-r1",
-        zh: "Qwen-Coder-Qoder (自研强化学习优化模型), Qwen3 系列, DeepSeek-v3, DeepSeek-r1"
+        en: "Qwen-Coder-Qoder (custom RL-optimized), Qwen3-Coder-Max, Qwen3-Coder-Plus, DeepSeek-v3, DeepSeek-r1",
+        zh: "Qwen-Coder-Qoder (自研强化学习优化模型), Qwen3-Coder-Max, Qwen3-Coder-Plus, DeepSeek-v3, DeepSeek-r1"
       },
       limits: {
         en: "Free Individual Edition: Unlimited basic code completions and general Q&A.",
@@ -914,8 +914,8 @@ const toolsData = [
         zh: "免费 (个人) | 约 $32/用户/月 (企业专属版)"
       },
       models: {
-        en: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, qwen2.5-max, multi-model (DeepSeek, Kimi, MiniMax, GLM)",
-        zh: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, qwen2.5-max, 多模型 (DeepSeek, Kimi, MiniMax, GLM)"
+        en: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, Qwen3-Max, multi-model (DeepSeek, Kimi, MiniMax, GLM)",
+        zh: "Qwen3-Coder, Qwen-Coder-Qoder, Qwen3-thinking, Qwen3-Max, 多模型 (DeepSeek, Kimi, MiniMax, GLM)"
       },
       limits: {
         en: "Enterprise plan adds proprietary knowledge base retrieval, custom model fine-tuning, and dedicated inference pipelines.",
@@ -1032,8 +1032,8 @@ const toolsData = [
         zh: "$39/用户/月 (代码助手) | $59/用户/月 (Agent 平台)"
       },
       models: {
-        en: "Tabnine Protected, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5 series, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+",
-        zh: "Tabnine 自研保护版, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5 系列, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+"
+        en: "Tabnine Protected, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.5, GPT-5.5 Pro, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+",
+        zh: "Tabnine 自研保护版, Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.5, GPT-5.5 Pro, Gemini 3 Pro, Gemini 2.5 Pro/Flash, Qwen3-Coder, Devstral, Command R+"
       },
       limits: {
         en: "Pro/Dev: Unlimited chat & completions. Agentic: Adds autonomous multi-step code refactoring agents.",
@@ -1650,6 +1650,183 @@ const toolsData = [
       en: "Successor to Sourcegraph Cody's agent mode. Deep code graph understanding from Sourcegraph's search infrastructure. Works alongside Cody for complementary capabilities.",
       zh: "Sourcegraph Cody Agent 模式的继任者。依托 Sourcegraph 搜索基础设施实现深度代码图谱理解。可与 Cody 配合使用实现功能互补。"
     }
+  },
+  {
+    id: "nsight-copilot",
+    name: "NVIDIA Nsight Copilot",
+    category: "extension",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://developer.nvidia.com/nsight-copilot",
+    github: "",
+    installCmd: "VS Code Marketplace -> Search: 'NVIDIA Nsight Copilot'",
+    desc: {
+      en: "NVIDIA's AI-powered coding assistant designed specifically for accelerated computing and CUDA development, powered by NVIDIA NIM.",
+      zh: "NVIDIA 专为加速计算和 CUDA 开发设计的 AI 智能编程助手，由 NVIDIA NIM 提供算力支持。"
+    },
+    freeTier: {
+      models: {
+        en: "nvidia/CUDA-autocomplete, NVIDIA CUDA Expert LLMs (via NIM)",
+        zh: "nvidia/CUDA-autocomplete, NVIDIA CUDA 专家大模型 (通过 NIM 接口)"
+      },
+      limits: {
+        en: "Free with NVIDIA Developer account. Generous API quotas for CUDA code generation, expert chat, and code explanation.",
+        zh: "使用免费的 NVIDIA Developer 账号即可。提供充裕的 API 配额，支持 CUDA 代码生成、专家对话及代码释义。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "None (Free Developer Tool)",
+        zh: "无 (免费开发者工具)"
+      },
+      models: {
+        en: "Same as free tier (No separate paid subscription)",
+        zh: "与免费版一致 (无独立付费订阅)"
+      },
+      limits: {
+        en: "No paid limit. NVIDIA AI Enterprise customers can configure custom local NIM endpoints.",
+        zh: "无付费限制。NVIDIA AI Enterprise 客户可以配置本地私有化 NIM 终端接口。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign in with a free NVIDIA Developer account in VS Code.",
+        zh: "在 VS Code 中使用免费的 NVIDIA Developer 账号登录。"
+      },
+      requirements: {
+        en: "NVIDIA Developer account (free registration).",
+        zh: "需要注册并拥有 NVIDIA Developer 账号（免费注册）。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Always free for registered developers.",
+        zh: "对所有注册的开发者永久免费。"
+      }
+    },
+    extraInfo: {
+      en: "Highly specialized in CUDA syntax, GPU memory optimization, and parallel programming patterns. Integrated into Nsight tools suite.",
+      zh: "深度专精于 CUDA 语法、GPU 显存优化及并行编程模式。现已深度集成到 NVIDIA Nsight 开发者工具套件中。"
+    }
+  },
+  {
+    id: "lovable",
+    name: "Lovable",
+    category: "web",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://lovable.dev",
+    github: "",
+    installCmd: "",
+    desc: {
+      en: "An AI full-stack web builder that generates clean, production-ready React/Vite code. Build, edit, and publish web apps directly in the browser.",
+      zh: "AI 全栈 Web 应用程序生成器，生成干净且生产就绪的 React/Vite 代码。支持直接在浏览器中构建、编辑并上线发布 Web 应用。"
+    },
+    freeTier: {
+      models: {
+        en: "Claude Sonnet 4.6 (default routing), GPT-4o",
+        zh: "Claude Sonnet 4.6（默认路由）, GPT-4o"
+      },
+      limits: {
+        en: "Free Plan: 5 credits/day (max 30 credits/month). Public projects only. Generous for prototyping.",
+        zh: "免费计划：每日 5 次对话额度（每月上限 30 次）。仅限公开项目。适合原型设计与探索学习。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$25/mo (Pro) | $50/mo (Business) | Custom (Enterprise)",
+        zh: "$25/月 (Pro) | $50/月 (Business) | 自定义 (Enterprise)"
+      },
+      models: {
+        en: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 2.5 Pro",
+        zh: "Claude Sonnet 4.6, Claude Opus 4.7, GPT-5.5, Gemini 2.5 Pro"
+      },
+      limits: {
+        en: "Pro: 100 monthly credits + 5 daily, private projects, custom domains, and direct code editing mode.",
+        zh: "Pro：每月 100 点积分额度 + 每日 5 点额度，支持私有项目、自定义域名及直接编辑代码模式。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Sign up via Google, GitHub, or Email at lovable.dev.",
+        zh: "在 lovable.dev 通过 Google、GitHub 或邮箱注册账号。"
+      },
+      requirements: {
+        en: "No card required for Free tier. Subscribing to paid tiers requires payment card.",
+        zh: "使用免费版无卡片要求。订阅付费计划需要提供支付卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free tier available for all developers to learn and experiment.",
+        zh: "免费版向所有开发者开放以进行学习与实验。"
+      }
+    },
+    extraInfo: {
+      en: "Highly regarded for code quality and compatibility with standard Vite/React setups. Seamless Supabase integration.",
+      zh: "因其生成的代码质量高、兼容标准 Vite/React 生态而备受好评。提供无缝的 Supabase 数据库集成功能。"
+    }
+  },
+  {
+    id: "v0-dev",
+    name: "v0.dev",
+    category: "web",
+    isOpenSource: false,
+    hasFreeTier: true,
+    status: "active",
+    website: "https://v0.dev",
+    github: "",
+    installCmd: "npx v0 add [block-id]",
+    desc: {
+      en: "Vercel's generative UI frontend builder. Generates copy-paste ready React, Tailwind CSS, and HTML components based on text prompts.",
+      zh: "Vercel 推出的生成式 UI 前端构建器。根据自然语言提示词生成可直接复制使用的 React、Tailwind CSS 以及 HTML 前端组件。"
+    },
+    freeTier: {
+      models: {
+        en: "v0 internal routing (Mini, Pro, Max options)",
+        zh: "v0 内部智能路由 (可选择 Mini, Pro, Max 等模式)"
+      },
+      limits: {
+        en: "Free Plan: $5 monthly credits, 7 messages per day. Public generations. Deployment to Vercel.",
+        zh: "免费计划：每月 $5 额度，每日限制发送 7 条消息。所有生成结果公开。支持一键部署至 Vercel。"
+      }
+    },
+    paidTier: {
+      price: {
+        en: "$20/mo (Premium) | $30/mo per user (Team) | $100/mo (Business)",
+        zh: "$20/月 (Premium) | $30/月/人 (Team) | $100/月 (Business)"
+      },
+      models: {
+        en: "v0 internal routing (Optimized Claude / GPT variants)",
+        zh: "v0 内部路由 (优化后的 Claude / GPT 变体)"
+      },
+      limits: {
+        en: "Premium: $20 monthly credits, priority generations, private projects, additional credit purchases.",
+        zh: "Premium：每月 $20 额度，享有高优先级生成速度、支持私有项目，并可购买额外点数。"
+      }
+    },
+    registration: {
+      process: {
+        en: "Log in with GitHub, Google, or Vercel account at v0.dev.",
+        zh: "在 v0.dev 使用 GitHub、Google 或 Vercel 账号直接登录。"
+      },
+      requirements: {
+        en: "No card needed for Free tier.",
+        zh: "使用免费版无需绑定任何支付卡。"
+      }
+    },
+    promotions: {
+      trials: {
+        en: "Free $5 credit allocation refreshed monthly for all active accounts.",
+        zh: "所有活跃账户每月均会自动刷新并赠送 $5 免费额度。"
+      }
+    },
+    extraInfo: {
+      en: "Seamlessly integrates with Vercel's hosting environment and supports direct copy-paste or installing components via CLI.",
+      zh: "与 Vercel 的托管环境完美契合，支持代码的直接复制粘贴或通过命令行 CLI 将组件安装到项目中。"
+    }
   }
 ];
 
@@ -1687,7 +1864,8 @@ const translations = {
     categoryLabels: {
       ide: "AI-First IDE",
       cli: "CLI Agent",
-      extension: "VS Code Extension"
+      extension: "VS Code Extension",
+      web: "Web Builder"
     },
     // Card Specifics
     cardFreeTitle: "Free Tier Available Models",
@@ -1768,7 +1946,8 @@ const translations = {
     categoryLabels: {
       ide: "AI 原生 IDE",
       cli: "CLI 智能体",
-      extension: "VS Code 插件"
+      extension: "VS Code 插件",
+      web: "Web 构建器"
     },
     // Card Specifics
     cardFreeTitle: "免费可用具体模型",
@@ -2339,7 +2518,10 @@ const suggestionsData = {
     { value: "Bolt.new", label: "Bolt.new (StackBlitz)", type: "tool", icon: "globe" },
     { value: "Amazon Q Developer", label: "Amazon Q Developer", type: "tool", icon: "layers" },
     { value: "JetBrains AI Assistant", label: "JetBrains AI Assistant", type: "tool", icon: "layers" },
-    { value: "Amp (Sourcegraph)", label: "Amp (Sourcegraph)", type: "tool", icon: "terminal" }
+    { value: "Amp (Sourcegraph)", label: "Amp (Sourcegraph)", type: "tool", icon: "terminal" },
+    { value: "NVIDIA Nsight Copilot", label: "NVIDIA Nsight Copilot", type: "tool", icon: "layers" },
+    { value: "Lovable", label: "Lovable", type: "tool", icon: "globe" },
+    { value: "v0.dev", label: "v0.dev", type: "tool", icon: "globe" }
   ],
   models: [
     { value: "Claude Sonnet 4.6", label: "Claude Sonnet 4.6", type: "model", icon: "cpu" },
@@ -2350,11 +2532,17 @@ const suggestionsData = {
     { value: "GPT-5.4", label: "GPT-5.4", type: "model", icon: "cpu" },
     { value: "GPT-4o", label: "GPT-4o", type: "model", icon: "cpu" },
     { value: "Grok 4.3", label: "Grok 4.3 (xAI)", type: "model", icon: "cpu" },
-    { value: "DeepSeek", label: "DeepSeek (R1/V3/V4)", type: "model", icon: "cpu" },
-    { value: "Gemini", label: "Gemini 3 Pro / 2.5 Pro", type: "model", icon: "cpu" },
+    { value: "DeepSeek V4 Pro", label: "DeepSeek V4 Pro", type: "model", icon: "cpu" },
+    { value: "DeepSeek R1", label: "DeepSeek R1 (Reasoning)", type: "model", icon: "cpu" },
+    { value: "DeepSeek V3", label: "DeepSeek V3 (Base)", type: "model", icon: "cpu" },
+    { value: "Gemini 3 Pro", label: "Gemini 3 Pro", type: "model", icon: "cpu" },
+    { value: "Gemini 2.5 Pro", label: "Gemini 2.5 Pro", type: "model", icon: "cpu" },
+    { value: "Gemini 2.5 Flash", label: "Gemini 2.5 Flash", type: "model", icon: "cpu" },
     { value: "SWE-1.6", label: "SWE-1.6 (Windsurf)", type: "model", icon: "cpu" },
-    { value: "Qwen3-Coder", label: "Qwen3-Coder", type: "model", icon: "cpu" },
-    { value: "Doubao", label: "Doubao-Code (Trae)", type: "model", icon: "cpu" },
+    { value: "Qwen3-Coder-Max", label: "Qwen3-Coder-Max", type: "model", icon: "cpu" },
+    { value: "Qwen3-Coder-Plus", label: "Qwen3-Coder-Plus", type: "model", icon: "cpu" },
+    { value: "Doubao-1.5-Pro", label: "Doubao 1.5 Pro (ByteDance)", type: "model", icon: "cpu" },
+    { value: "CUDA-autocomplete", label: "CUDA-autocomplete (NVIDIA)", type: "model", icon: "cpu" },
     { value: "Ollama", label: "Ollama (Local LLMs)", type: "model", icon: "cpu" },
     { value: "Devstral", label: "Devstral (Mistral)", type: "model", icon: "cpu" }
   ],
